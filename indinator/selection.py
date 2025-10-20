@@ -15,6 +15,8 @@ def select_next_question(pi: np.ndarray, entities: List[str], remaining_qids: Li
       take expectation under predictive P(a|q)
     Choose q with min expected entropy (max EIG).
     """
+    if not remaining_qids:
+        return None
     best_q, best_e = None, +1e9
     for q in remaining_qids:
         E = 0.0

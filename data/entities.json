@@ -1,8 +1,236 @@
 {
-  "$schema": "entities.schema",
   "version": 1,
   "entities": [
-    {"id": "iron_man", "name": "Iron Man", "franchise": "Marvel", "meta": {"medium": "film"}},
-    {"id": "batman", "name": "Batman", "franchise": "DC", "meta": {"medium": "film"}}
+    {
+      "id": "1001",
+      "name": "Captain America (Ultimate Marvel character)",
+      "franchise": "Ultimate Marvel",
+      "meta": {
+        "source": "Wikipedia",
+        "universe": "Marvel",
+        "list": "Ultimate",
+        "wikipedia_title": "Captain America (Ultimate Marvel character)"
+      }
+    },
+    {
+      "id": "1002",
+      "name": "Chitauri",
+      "franchise": "Ultimate Marvel",
+      "meta": {
+        "source": "Wikipedia",
+        "universe": "Marvel",
+        "list": "Ultimate",
+        "wikipedia_title": "Chitauri"
+      }
+    },
+    {
+      "id": "1003",
+      "name": "Geldoff",
+      "franchise": "Ultimate Marvel",
+      "meta": {
+        "source": "Wikipedia",
+        "universe": "Marvel",
+        "list": "Ultimate",
+        "wikipedia_title": "Geldoff"
+      }
+    },
+    {
+      "id": "1004",
+      "name": "Green Goblin (Ultimate Marvel character)",
+      "franchise": "Ultimate Marvel",
+      "meta": {
+        "source": "Wikipedia",
+        "universe": "Marvel",
+        "list": "Ultimate",
+        "wikipedia_title": "Green Goblin (Ultimate Marvel character)"
+      }
+    },
+    {
+      "id": "1005",
+      "name": "Iron Man (Ultimate Marvel character)",
+      "franchise": "Ultimate Marvel",
+      "meta": {
+        "source": "Wikipedia",
+        "universe": "Marvel",
+        "list": "Ultimate",
+        "wikipedia_title": "Iron Man (Ultimate Marvel character)"
+      }
+    },
+    {
+      "id": "1006",
+      "name": "Jimmy Hudson",
+      "franchise": "Ultimate Marvel",
+      "meta": {
+        "source": "Wikipedia",
+        "universe": "Marvel",
+        "list": "Ultimate",
+        "wikipedia_title": "Jimmy Hudson"
+      }
+    },
+    {
+      "id": "1007",
+      "name": "Kenny \"Kong\" McFarlane",
+      "franchise": "Ultimate Marvel",
+      "meta": {
+        "source": "Wikipedia",
+        "universe": "Marvel",
+        "list": "Ultimate",
+        "wikipedia_title": "Kenny \"Kong\" McFarlane"
+      }
+    },
+    {
+      "id": "1008",
+      "name": "List of Marvel Comics characters: A",
+      "franchise": "Ultimate Marvel",
+      "meta": {
+        "source": "Wikipedia",
+        "universe": "Marvel",
+        "list": "Ultimate",
+        "wikipedia_title": "List of Marvel Comics characters: A"
+      }
+    },
+    {
+      "id": "1009",
+      "name": "Magician (Marvel Comics)",
+      "franchise": "Ultimate Marvel",
+      "meta": {
+        "source": "Wikipedia",
+        "universe": "Marvel",
+        "list": "Ultimate",
+        "wikipedia_title": "Magician (Marvel Comics)"
+      }
+    },
+    {
+      "id": "1010",
+      "name": "Mahr Vehl",
+      "franchise": "Ultimate Marvel",
+      "meta": {
+        "source": "Wikipedia",
+        "universe": "Marvel",
+        "list": "Ultimate",
+        "wikipedia_title": "Mahr Vehl"
+      }
+    },
+    {
+      "id": "1011",
+      "name": "Maker (character)",
+      "franchise": "Ultimate Marvel",
+      "meta": {
+        "source": "Wikipedia",
+        "universe": "Marvel",
+        "list": "Ultimate",
+        "wikipedia_title": "Maker (character)"
+      }
+    },
+    {
+      "id": "1012",
+      "name": "Miles Morales",
+      "franchise": "Ultimate Marvel",
+      "meta": {
+        "source": "Wikipedia",
+        "universe": "Marvel",
+        "list": "Ultimate",
+        "wikipedia_title": "Miles Morales"
+      }
+    },
+    {
+      "id": "1013",
+      "name": "Monica Chang",
+      "franchise": "Ultimate Marvel",
+      "meta": {
+        "source": "Wikipedia",
+        "universe": "Marvel",
+        "list": "Ultimate",
+        "wikipedia_title": "Monica Chang"
+      }
+    },
+    {
+      "id": "1014",
+      "name": "Spider-Man (Ultimate Marvel character)",
+      "franchise": "Ultimate Marvel",
+      "meta": {
+        "source": "Wikipedia",
+        "universe": "Marvel",
+        "list": "Ultimate",
+        "wikipedia_title": "Spider-Man (Ultimate Marvel character)"
+      }
+    },
+    {
+      "id": "1015",
+      "name": "Spider-Woman (Ultimate Marvel character)",
+      "franchise": "Ultimate Marvel",
+      "meta": {
+        "source": "Wikipedia",
+        "universe": "Marvel",
+        "list": "Ultimate",
+        "wikipedia_title": "Spider-Woman (Ultimate Marvel character)"
+      }
+    },
+    {
+      "id": "1016",
+      "name": "Thor (Ultimate Marvel)",
+      "franchise": "Ultimate Marvel",
+      "meta": {
+        "source": "Wikipedia",
+        "universe": "Marvel",
+        "list": "Ultimate",
+        "wikipedia_title": "Thor (Ultimate Marvel)"
+      }
+    },
+    {
+      "id": "1017",
+      "name": "Tyrone Cash",
+      "franchise": "Ultimate Marvel",
+      "meta": {
+        "source": "Wikipedia",
+        "universe": "Marvel",
+        "list": "Ultimate",
+        "wikipedia_title": "Tyrone Cash"
+      }
+    },
+    {
+      "id": "1018",
+      "name": "Ultimate Fantastic Four",
+      "franchise": "Ultimate Marvel",
+      "meta": {
+        "source": "Wikipedia",
+        "universe": "Marvel",
+        "list": "Ultimate",
+        "wikipedia_title": "Ultimate Fantastic Four"
+      }
+    },
+    {
+      "id": "1019",
+      "name": "Ultimate X-Men",
+      "franchise": "Ultimate Marvel",
+      "meta": {
+        "source": "Wikipedia",
+        "universe": "Marvel",
+        "list": "Ultimate",
+        "wikipedia_title": "Ultimate X-Men"
+      }
+    },
+    {
+      "id": "1020",
+      "name": "Ultimates",
+      "franchise": "Ultimate Marvel",
+      "meta": {
+        "source": "Wikipedia",
+        "universe": "Marvel",
+        "list": "Ultimate",
+        "wikipedia_title": "Ultimates"
+      }
+    },
+    {
+      "id": "1021",
+      "name": "Wolverine (Ultimate Marvel character)",
+      "franchise": "Ultimate Marvel",
+      "meta": {
+        "source": "Wikipedia",
+        "universe": "Marvel",
+        "list": "Ultimate",
+        "wikipedia_title": "Wolverine (Ultimate Marvel character)"
+      }
+    }
   ]
 }

@@ -1,19 +1,14 @@
-/* Example. Lets just chatGPT a bank of questions */
 {
-  "$schema": "./questions.schema.json",
   "version": 1,
   "questions": [
-    {
-      "id": "q_universe",
-      "text": "Is the character from the Marvel universe?",
-      "type": "boolean",
-      "style_guide": "Include MCU & comics; exclude DC"
-    },
-    {
-      "id": "q_has_powers",
-      "text": "Does the character have superpowers?",
-      "type": "boolean",
-      "style_guide": "Powers beyond normal humans"
-    }
+    {"id": "1", "text": "Is the character a hero (primarily)?", "type": "boolean", "style_guide": "Anti-heroes count as hero if mostly portrayed as such."},
+    {"id": "2", "text": "Does the character have superhuman abilities?", "type": "boolean", "style_guide": "Anything beyond peak human."},
+    {"id": "3", "text": "Is the character part of the X-Men?", "type": "boolean", "style_guide": "Affiliation in Ultimate universe counts."},
+    {"id": "4", "text": "Is the character part of the Ultimates (Avengers)?", "type": "boolean", "style_guide": "Any notable stint counts."},
+    {"id": "5", "text": "Is the character primarily human (non-mutant, non-alien)?", "type": "boolean", "style_guide": "Enhanced humans still human."},
+    {"id": "6", "text": "Is the character a mutant?", "type": "boolean", "style_guide": "Mutant origin in Ultimate canon."},
+    {"id": "7", "text": "Is the character primarily a villain?", "type": "boolean", "style_guide": "If mostly antagonistic across arcs."},
+    {"id": "8", "text": "Does the character use advanced technology/armor as a core trait?", "type": "boolean", "style_guide": "Iron Man-esque or gadget-dependent."},
+    {"id": "9", "text": "Is the character a founding member of a major team (Ultimates, X-Men, FF)?", "type": "boolean", "style_guide": "Ultimate continuity only."}
   ]
 }
