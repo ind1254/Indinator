@@ -9,6 +9,22 @@
     {"id": "6", "text": "Is the character a mutant?", "type": "boolean", "style_guide": "Mutant origin in Ultimate canon."},
     {"id": "7", "text": "Is the character primarily a villain?", "type": "boolean", "style_guide": "If mostly antagonistic across arcs."},
     {"id": "8", "text": "Does the character use advanced technology/armor as a core trait?", "type": "boolean", "style_guide": "Iron Man-esque or gadget-dependent."},
-    {"id": "9", "text": "Is the character a founding member of a major team (Ultimates, X-Men, FF)?", "type": "boolean", "style_guide": "Ultimate continuity only."}
+    {"id": "9", "text": "Is the character a founding member of a major team (Ultimates, X-Men, FF)?", "type": "boolean", "style_guide": "Ultimate continuity only."},
+    {"id": "10", "text": "Is the character from the DC universe?", "type": "boolean", "style_guide": "Main DC canon (any continuity) counts."},
+    {"id": "11", "text": "Is the character from the Marvel universe?", "type": "boolean", "style_guide": "Main Marvel canon (any continuity) counts."},
+    {"id": "12", "text": "Is the character from an anime or manga franchise?", "type": "boolean", "style_guide": "Originated in Japanese anime/manga."},
+    {"id": "13", "text": "Is the character from a Western cartoon series?", "type": "boolean", "style_guide": "Primarily animated TV outside anime."},
+    {"id": "14", "text": "Is the character primarily associated with the Avengers?", "type": "boolean", "style_guide": "Any notable stint counts across canons."},
+    {"id": "15", "text": "Is the character primarily associated with the Justice League?", "type": "boolean", "style_guide": "Any notable stint counts across canons."},
+    {"id": "16", "text": "Is the character a member of the Guardians of the Galaxy?", "type": "boolean", "style_guide": "Any notable stint counts across canons."},
+    {"id": "17", "text": "Does the character use magic or mystic arts?", "type": "boolean", "style_guide": "Sorcery, chi, or supernatural magic as a core trait."},
+    {"id": "18", "text": "Is the character an alien or non-human species?", "type": "boolean", "style_guide": "Non-human origin/species (androids excluded)."},
+    {"id": "19", "text": "Is the character a robot, android, or cyborg?", "type": "boolean", "style_guide": "Includes partly cybernetic characters."},
+    {"id": "20", "text": "Does the character primarily fight with a sword?", "type": "boolean", "style_guide": "Sword is a signature primary weapon."},
+    {"id": "21", "text": "Is the character a pirate?", "type": "boolean", "style_guide": "Notable affiliation/identity as a pirate."},
+    {"id": "22", "text": "Is the character a ninja/shinobi?", "type": "boolean", "style_guide": "Canonical shinobi training/identity."},
+    {"id": "23", "text": "Is the character a billionaire/industrialist?", "type": "boolean", "style_guide": "Wealth and industry leadership central to identity."},
+    {"id": "24", "text": "Is the character royalty (king/queen/prince/princess)?", "type": "boolean", "style_guide": "Formal royal status in canon."},
+    {"id": "25", "text": "Is the character primarily comedic/lighthearted in tone?", "type": "boolean", "style_guide": "Generally portrayed for humor over drama."}
   ]
 }
