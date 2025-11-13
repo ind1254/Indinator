@@ -1,0 +1,131 @@
+{
+  "Harry Potter": ["human", "magic", "movie", "book", "team", "protagonist", "weapon", "iconic", "loyal", "rebellious", "fantasy"],
+  "Hermione Granger": ["human", "female", "magic", "movie", "book", "team", "smart", "wise", "loyal", "fantasy"],
+  "Ron Weasley": ["human", "magic", "movie", "book", "team", "funny", "loyal", "fantasy"],
+  "Albus Dumbledore": ["human", "magic", "movie", "book", "wise", "leader", "fantasy"],
+  "Darth Vader": ["human", "villain", "movie", "tv", "videogame", "mask", "weapon", "futuristic", "military", "science", "antihero", "iconic"],
+  "Luke Skywalker": ["human", "movie", "tv", "protagonist", "weapon", "powers", "pilot", "futuristic", "wise", "rebellious"],
+  "Princess Leia": ["human", "female", "movie", "tv", "leader", "royalty", "military", "futuristic", "iconic"],
+  "Han Solo": ["human", "movie", "pilot", "guns", "futuristic", "team", "funny", "science", "antihero", "companion"],
+
+  "Frodo Baggins": ["creature", "movie", "book", "fantasy", "protagonist", "weapon", "loyal", "tragic"],
+  "Gandalf": ["creature", "magic", "movie", "book", "fantasy", "wise", "leader", "immortal", "monsterhunter"],
+  "Aragorn": ["human", "movie", "book", "fantasy", "royalty", "leader", "weapon", "military"],
+  "Legolas": ["creature", "movie", "book", "fantasy", "speed", "immortal", "weapon"],
+  "Bilbo Baggins": ["creature", "movie", "book", "fantasy", "protagonist", "weapon", "funny"],
+
+  "Katniss Everdeen": ["human", "female", "movie", "book", "protagonist", "weapon", "combat", "rebellious", "tragic"],
+  "Peeta Mellark": ["human", "movie", "book", "combat", "tragic"],
+  "President Snow": ["human", "movie", "book", "villain", "leader"],
+
+  "Sherlock Holmes": ["human", "book", "movie", "tv", "smart", "protagonist", "wise", "science", "iconic"],
+  "John Watson": ["human", "book", "movie", "tv", "loyal", "combat"],
+
+  "James Bond": ["human", "movie", "guns", "strength", "iconic", "pilot", "team"],
+  "Indiana Jones": ["human", "movie", "science", "weapon", "smart", "combat"],
+
+  "Batman": ["human", "male", "movie", "comic", "superhero", "mask", "combat", "wealthy", "iconic"],
+  "Superman": ["human", "superhero", "powers", "fly", "movie", "comic", "protagonist", "iconic"],
+  "Wonder Woman": ["female", "superhero", "combat", "strength", "movie", "magic", "iconic"],
+  "The Joker": ["human", "villain", "movie", "comic", "antihero", "crazy", "iconic"],
+  "Harley Quinn": ["female", "villain", "movie", "comic", "funny", "antihero"],
+
+  "Spider-Man": ["human", "superhero", "movie", "comic", "mask", "speed", "protagonist", "powers"],
+  "Iron Man": ["human", "superhero", "movie", "comic", "science", "leader", "protagonist", "iconic"],
+  "Captain America": ["human", "superhero", "movie", "combat", "leader", "military", "iconic"],
+  "Hulk": ["human", "superhero", "strength", "powers", "movie", "comic"],
+  "Thor": ["creature", "superhero", "powers", "magic", "royalty", "movie"],
+  "Black Widow": ["human", "female", "movie", "combat", "spy", "team"],
+  "Loki": ["creature", "villain", "magic", "movie", "antihero", "royalty"],
+  "Thanos": ["creature", "villain", "strength", "powers", "movie", "futuristic", "iconic"],
+
+  "Naruto Uzumaki": ["creature", "anime", "powers", "combat", "protagonist", "speed", "team"],
+  "Sasuke Uchiha": ["creature", "anime", "powers", "combat", "antihero"],
+  "Sakura Haruno": ["creature", "female", "anime", "combat", "team"],
+  "Kakashi Hatake": ["creature", "anime", "mask", "combat", "wise"],
+
+  "Monkey D. Luffy": ["human", "anime", "powers", "combat", "rubber", "protagonist", "team"],
+  "Roronoa Zoro": ["human", "anime", "combat", "weapon", "wise"],
+  "Nami": ["human", "female", "anime", "team", "smart"],
+  "Sanji": ["human", "anime", "combat", "team", "funny"],
+
+  "Light Yagami": ["human", "anime", "smart", "villain"],
+  "L Lawliet": ["human", "anime", "smart", "protagonist"],
+
+  "Goku": ["creature", "anime", "superhero", "combat", "powers", "speed", "protagonist"],
+  "Vegeta": ["creature", "anime", "combat", "antihero", "powers"],
+  "Piccolo": ["creature", "anime", "combat", "powers", "protagonist"],
+
+  "Ash Ketchum": ["human", "anime", "protagonist", "team", "monsterhunter"],
+  "Pikachu": ["creature", "anime", "powers", "speed", "iconic"],
+
+  "Mario": ["human", "videogame", "iconic", "combat", "speed"],
+  "Luigi": ["human", "videogame", "combat", "sidekick"],
+  "Princess Peach": ["human", "female", "videogame", "royalty"],
+  "Bowser": ["creature", "videogame", "villain", "strength", "powers"],
+
+  "Link": ["human", "videogame", "fantasy", "weapon", "protagonist"],
+  "Zelda": ["human", "female", "videogame", "magic", "royalty"],
+  "Ganondorf": ["creature", "videogame", "magic", "villain", "strength"],
+
+  "Kratos": ["human", "videogame", "combat", "strength", "antihero", "protagonist"],
+  "Atreus": ["human", "videogame", "magic", "child", "team"],
+
+  "Master Chief": ["human", "videogame", "military", "mask", "combat", "science", "futuristic"],
+  "Cortana": ["creature", "videogame", "science", "ai", "futuristic"],
+
+  "Geralt of Rivia": ["human", "videogame", "monsterhunter", "combat", "fantasy", "antihero"],
+  "Yennefer": ["human", "female", "videogame", "magic", "fantasy"],
+  "Ciri": ["human", "female", "videogame", "magic", "fantasy", "protagonist"],
+
+  "Eren Yeager": ["human", "anime", "military", "shapeshift", "antihero"],
+  "Mikasa Ackerman": ["human", "anime", "military", "combat", "loyal"],
+  "Armin Arlert": ["human", "anime", "military", "smart"],
+  "Levi Ackerman": ["human", "anime", "military", "combat", "wise"],
+
+  "Rick Grimes": ["human", "tv", "leader", "weapon", "villain", "antihero"],
+  "Michonne": ["human", "tv", "weapon", "combat", "leader"],
+
+  "Homer Simpson": ["human", "animated", "tv", "funny"],
+  "Bart Simpson": ["human", "animated", "tv", "child", "rebellious"],
+  "Lisa Simpson": ["human", "animated", "tv", "smart", "child"],
+
+  "SpongeBob SquarePants": ["creature", "animated", "tv", "funny"],
+  "Patrick Star": ["creature", "animated", "tv", "funny"],
+  "Squidward Tentacles": ["creature", "animated", "tv", "funny"],
+
+  "Shrek": ["creature", "animated", "movie", "funny", "antihero", "fantasy"],
+  "Donkey": ["creature", "animated", "movie", "funny"],
+  "Fiona": ["human", "animated", "movie", "magic", "royalty"],
+
+  "Elsa": ["human", "female", "animated", "movie", "magic", "powers"],
+  "Anna": ["human", "female", "animated", "movie"],
+  "Olaf": ["creature", "animated", "movie", "magic", "funny"],
+
+  "Aang": ["human", "animated", "tv", "magic", "powers", "protagonist"],
+  "Zuko": ["human", "animated", "tv", "magic", "antihero"],
+  "Katara": ["human", "female", "animated", "tv", "magic"],
+  "Sokka": ["human", "animated", "tv", "funny"],
+
+  "Walter White": ["human", "tv", "leader", "science", "villain", "antihero"],
+  "Jesse Pinkman": ["human", "tv", "antihero", "science"],
+  "Saul Goodman": ["human", "tv", "funny", "antihero"],
+
+  "Eleven": ["human", "female", "tv", "powers", "magic"],
+  "Mike Wheeler": ["human", "tv", "team"],
+  "Vecna": ["creature", "tv", "magic", "villain"],
+
+  "Jon Snow": ["human", "tv", "fantasy", "leader", "combat"],
+  "Daenerys Targaryen": ["human", "female", "tv", "fantasy", "magic", "royalty", "leader"],
+  "Tyrion Lannister": ["human", "tv", "fantasy", "smart", "funny"],
+  "Arya Stark": ["human", "female", "tv", "fantasy", "combat"],
+
+  "Sonic the Hedgehog": ["creature", "videogame", "speed", "iconic"],
+  "Dr. Eggman": ["human", "villain", "videogame", "science"],
+
+  "Lara Croft": ["human", "female", "videogame", "combat", "weapon"],
+  "Nathan Drake": ["human", "videogame", "combat", "smart"],
+
+  "Joel Miller": ["human", "videogame", "weapon", "combat", "antihero"],
+  "Ellie Williams": ["human", "female", "videogame", "combat", "protagonist"]
+}
