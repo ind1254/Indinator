@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Indinator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">
+      <h1>Indinator</h1>
+      <p class="tagline">A Bayesian guessing game</p>
+    </header>
+
+    <main class="app-main">
+      <!-- Game card -->
+      <section class="game-card">
+        <div class="status-row">
+          <span id="question-count">Question: 0</span>
+          <span id="entropy-label">Uncertainty: --</span>
+        </div>
+
+        <div id="question-container">
+          <p id="question-text">Click “Start Game” to begin!</p>
+        </div>
+
+        <div class="answers">
+          <button class="answer-btn yes" data-answer="yes">Yes</button>
+          <button class="answer-btn probably-yes" data-answer="probably_yes">Probably</button>
+          <button class="answer-btn unknown" data-answer="unknown">I don’t know</button>
+          <button class="answer-btn probably-no" data-answer="probably_no">Probably not</button>
+          <button class="answer-btn no" data-answer="no">No</button>
+        </div>
+
+        <div id="guess-container" class="hidden">
+          <p id="guess-text"></p>
+          <div class="guess-actions">
+            <button id="guess-correct-btn">Yes, you got it!</button>
+            <button id="guess-incorrect-btn">No, keep going</button>
+          </div>
+        </div>
+
+        <div id="system-message" class="system-message"></div>
+
+        <div class="controls">
+          <button id="start-btn">Start Game</button>
+          <button id="restart-btn" class="secondary">Restart</button>
+        </div>
+      </section>
+
+      <!-- Sidebar with candidates -->
+      <aside class="sidebar">
+        <h2>Top Candidates</h2>
+        <ul id="candidate-list" class="candidate-list">
+          <!-- Filled dynamically -->
+        </ul>
+      </aside>
+    </main>
+
+    <footer class="app-footer">
+      <small>Indinator • Bayesian 20-Questions</small>
+    </footer>
+  </div>
+</body>
+</html>

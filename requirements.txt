@@ -1,5 +1,6 @@
 bs4
 fastapi
+flask
 matplotlib
 numpy
 openai
