@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { AnimatePresence } from "framer-motion";
 import LandingScreen from "@/components/LandingScreen";
 import GameScreen from "@/components/GameScreen";
 import ResultScreen from "@/components/ResultScreen";
@@ -93,33 +94,38 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
-      {gameState === "landing" && (
-        <LandingScreen 
-          onStart={handleStartGame} 
-          onOpenAbout={() => setShowAbout(true)} 
-        />
-      )}
+      <AnimatePresence mode="wait">
+        {gameState === "landing" && (
+          <LandingScreen 
+            key="landing"
+            onStart={handleStartGame} 
+            onOpenAbout={() => setShowAbout(true)} 
+          />
+        )}
 
-      {gameState === "playing" && currentState && (
-        <GameScreen
-          question={currentState.question?.text || null}
-          questionNumber={currentState.questionNumber}
-          entropy={currentState.entropy}
-          guess={currentState.guess}
-          onAnswer={handleAnswer}
-          onGuessFeedback={handleGuessFeedback}
-          onQuit={handleQuitGame}
-          isLoading={isLoading}
-        />
-      )}
+        {gameState === "playing" && currentState && (
+          <GameScreen
+            key={`playing-${currentState.questionNumber}`}
+            question={currentState.question?.text || null}
+            questionNumber={currentState.questionNumber}
+            entropy={currentState.entropy}
+            guess={currentState.guess}
+            onAnswer={handleAnswer}
+            onGuessFeedback={handleGuessFeedback}
+            onQuit={handleQuitGame}
+            isLoading={isLoading}
+          />
+        )}
 
-      {gameState === "result" && guessedCharacter && (
-        <ResultScreen
-          characterName={guessedCharacter.name}
-          characterQuote={guessedCharacter.quote || `I knew it was ${guessedCharacter.name}!`}
-          onPlayAgain={handleStartGame}
-        />
-      )}
+        {gameState === "result" && guessedCharacter && (
+          <ResultScreen
+            key="result"
+            characterName={guessedCharacter.name}
+            characterQuote={guessedCharacter.quote || `I knew it was ${guessedCharacter.name}!`}
+            onPlayAgain={handleStartGame}
+          />
+        )}
+      </AnimatePresence>
 
       <AboutModal open={showAbout} onOpenChange={setShowAbout} />
     </div>

@@ -3,27 +3,27 @@
 @tailwind utilities;
 @layer base {
      :root {
-        /* Clean minimal theme */
-        --background: 0 0% 100%;
-        --foreground: 0 0% 10%;
-        --card: 0 0% 98%;
-        --card-foreground: 0 0% 10%;
-        --popover: 0 0% 98%;
-        --popover-foreground: 0 0% 10%;
+        /* Royal blue Akinator-style theme */
+        --background: 220 20% 96%;
+        --foreground: 220 30% 15%;
+        --card: 0 0% 100%;
+        --card-foreground: 220 30% 15%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 220 30% 15%;
         --primary: 220 90% 50%;
         --primary-foreground: 0 0% 100%;
-        --secondary: 0 0% 95%;
-        --secondary-foreground: 0 0% 10%;
-        --muted: 0 0% 96%;
-        --muted-foreground: 0 0% 45%;
+        --secondary: 220 15% 90%;
+        --secondary-foreground: 220 30% 15%;
+        --muted: 220 10% 95%;
+        --muted-foreground: 220 20% 40%;
         --accent: 220 90% 50%;
         --accent-foreground: 0 0% 100%;
         --destructive: 0 84% 60%;
         --destructive-foreground: 0 0% 100%;
-        --border: 0 0% 90%;
-        --input: 0 0% 96%;
+        --border: 220 15% 85%;
+        --input: 220 10% 95%;
         --ring: 220 90% 50%;
-        --radius: 0.5rem;
+        --radius: 1rem;
     }
 }
 
@@ -34,11 +34,71 @@
     body {
         @apply bg-background text-foreground;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+        position: relative;
+        overflow-x: hidden;
     }
 }
 
 @layer utilities {
     .bubble-shadow {
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     }
+    .glow-blue {
+        text-shadow: 0 0 20px rgba(59, 130, 246, 0.5), 0 0 40px rgba(59, 130, 246, 0.3);
+    }
+    .gradient-royal-blue {
+        background: linear-gradient(135deg, #3b82f6 0%, #1e40af 50%, #1e3a8a 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    .soft-glow {
+        box-shadow: 0 0 30px rgba(59, 130, 246, 0.2);
+    }
+    .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+
+/* Animated gradient background */
+
+@keyframes gradient-shift {
+    0%,
+    100% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+.animated-gradient {
+    background: linear-gradient(-45deg, #e0e7ff, #dbeafe, #e0f2fe, #dbeafe);
+    background-size: 400% 400%;
+    animation: gradient-shift 15s ease infinite;
+}
+
+
+/* Particle animation */
+
+@keyframes float {
+    0%,
+    100% {
+        transform: translateY(0) translateX(0);
+    }
+    33% {
+        transform: translateY(-20px) translateX(10px);
+    }
+    66% {
+        transform: translateY(10px) translateX(-10px);
+    }
+}
+
+.particle {
+    animation: float 6s ease-in-out infinite;
 }
