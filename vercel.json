@@ -1,0 +1,21 @@
+{
+  "functions": {
+    "api/**/*.py": {
+      "maxDuration": 10,
+      "memory": 1024
+    }
+  },
+  "ignore": [
+    "venv/",
+    "__pycache__/",
+    ".pytest_cache/",
+    "tests/",
+    "*.log",
+    "notebooks/",
+    "data/",
+    "tmp/",
+    ".git/",
+    ".gitignore"
+  ]
+}
+
