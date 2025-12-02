@@ -1,3782 +1,1274 @@
 [
   {
-    "trait": "abilities_acrobatics",
-    "group": "abilities",
-    "question": "Does your character possess the ability of acrobatics?"
-  },
-  {
-    "trait": "abilities_airbending",
-    "group": "abilities",
-    "question": "Does your character possess the ability of airbending?"
-  },
-  {
-    "trait": "abilities_alchemy",
-    "group": "abilities",
-    "question": "Does your character possess the ability of alchemy?"
-  },
-  {
-    "trait": "abilities_animal_communication",
-    "group": "abilities",
-    "question": "Does your character possess the ability of animal communication?"
-  },
-  {
-    "trait": "abilities_archaeology",
-    "group": "abilities",
-    "question": "Does your character possess the ability of archaeology?"
-  },
-  {
-    "trait": "abilities_art",
-    "group": "abilities",
-    "question": "Does your character possess the ability of art?"
-  },
-  {
-    "trait": "abilities_assassination",
-    "group": "abilities",
-    "question": "Does your character possess the ability of assassination?"
-  },
-  {
-    "trait": "abilities_avatar_state",
-    "group": "abilities",
-    "question": "Does your character possess the ability of the avatar state?"
-  },
-  {
-    "trait": "abilities_bloodbending",
-    "group": "abilities",
-    "question": "Does your character possess the ability of bloodbending?"
-  },
-  {
-    "trait": "abilities_bomb_user",
-    "group": "abilities",
-    "question": "Does your character possess the ability of using bombs?"
-  },
-  {
-    "trait": "abilities_bow_user",
-    "group": "abilities",
-    "question": "Can your character use a bow?"
-  },
-  {
-    "trait": "abilities_bravery",
-    "group": "abilities",
-    "question": "Is your character brave?"
-  },
-  {
-    "trait": "abilities_camouflage",
-    "group": "abilities",
-    "question": "Can your character camouflage?"
-  },
-  {
-    "trait": "abilities_chaos_creation",
-    "group": "abilities",
-    "question": "Can your character create chaos?"
-  },
-  {
-    "trait": "abilities_chemistry",
-    "group": "abilities",
-    "question": "Does your character have chemistry skills?"
-  },
-  {
-    "trait": "abilities_climbing",
-    "group": "abilities",
-    "question": "Is your character good at climbing?"
-  },
-  {
-    "trait": "abilities_combat",
-    "group": "abilities",
-    "question": "Can your character fight in combat?"
-  },
-  {
-    "trait": "abilities_combat_genius",
-    "group": "abilities",
-    "question": "Is your character a combat genius?"
-  },
-  {
-    "trait": "abilities_combat_master",
-    "group": "abilities",
-    "question": "Is your character a combat master?"
-  },
-  {
-    "trait": "abilities_cooking",
-    "group": "abilities",
-    "question": "Can your character cook well?"
-  },
-  {
-    "trait": "abilities_copying_abilities",
-    "group": "abilities",
-    "question": "Does your character have the ability to copy other abilities?"
-  },
-  {
-    "trait": "abilities_cosmic_power",
-    "group": "abilities",
-    "question": "Does your character possess cosmic powers?"
-  },
-  {
-    "trait": "abilities_crafting",
-    "group": "abilities",
-    "question": "Can your character craft things?"
-  },
-  {
-    "trait": "abilities_dark_magic",
-    "group": "abilities",
-    "question": "Is your character skilled in dark magic?"
-  },
-  {
-    "trait": "abilities_data_manipulation",
-    "group": "abilities",
-    "question": "Can your character manipulate data?"
-  },
-  {
-    "trait": "abilities_death_note",
-    "group": "abilities",
-    "question": "Does your character possess a Death Note?"
-  },
-  {
-    "trait": "abilities_deduction",
-    "group": "abilities",
-    "question": "Is your character good at deduction?"
-  },
-  {
-    "trait": "abilities_detachable_parts",
-    "group": "abilities",
-    "question": "Does your character have detachable parts?"
-  },
-  {
-    "trait": "abilities_determination",
-    "group": "abilities",
-    "question": "Is your character known for their determination?"
-  },
-  {
-    "trait": "abilities_devil_fruit",
-    "group": "abilities",
-    "question": "Does your character have a Devil Fruit ability?"
-  },
-  {
-    "trait": "abilities_dimensional_travel",
-    "group": "abilities",
-    "question": "Can your character travel between dimensions?"
-  },
-  {
-    "trait": "abilities_diplomacy",
-    "group": "abilities",
-    "question": "Is your character skilled in diplomacy?"
-  },
-  {
-    "trait": "abilities_dragon_control",
-    "group": "abilities",
-    "question": "Can your character control dragons?"
-  },
-  {
-    "trait": "abilities_durability",
-    "group": "abilities",
-    "question": "Is your character known for their durability?"
-  },
-  {
-    "trait": "abilities_earthbending",
-    "group": "abilities",
-    "question": "Can your character bend earth?"
-  },
-  {
-    "trait": "abilities_elasticity",
-    "group": "abilities",
-    "question": "Is your character able to stretch like elastic?"
-  },
-  {
-    "trait": "abilities_electricity",
-    "group": "abilities",
-    "question": "Can your character generate electricity?"
-  },
-  {
-    "trait": "abilities_energy_blasts",
-    "group": "abilities",
-    "question": "Can your character shoot energy blasts?"
-  },
-  {
-    "trait": "abilities_energy_manipulation",
-    "group": "abilities",
-    "question": "Can your character manipulate energy?"
-  },
-  {
-    "trait": "abilities_engineering",
-    "group": "abilities",
-    "question": "Is your character skilled in engineering?"
-  },
-  {
-    "trait": "abilities_enhanced_reflexes",
-    "group": "abilities",
-    "question": "Does your character have enhanced reflexes?"
-  },
-  {
-    "trait": "abilities_enhanced_senses",
-    "group": "abilities",
-    "question": "Does your character have enhanced senses?"
-  },
-  {
-    "trait": "abilities_espionage",
-    "group": "abilities",
-    "question": "Does your character have espionage abilities?"
-  },
-  {
-    "trait": "abilities_face_changing",
-    "group": "abilities",
-    "question": "Can your character change their face?"
-  },
-  {
-    "trait": "abilities_fire_breathing",
-    "group": "abilities",
-    "question": "Can your character breathe fire?"
-  },
-  {
-    "trait": "abilities_fire_control",
-    "group": "abilities",
-    "question": "Can your character control fire?"
-  },
-  {
-    "trait": "abilities_fire_immunity",
-    "group": "abilities",
-    "question": "Is your character immune to fire?"
-  },
-  {
-    "trait": "abilities_firebending",
-    "group": "abilities",
-    "question": "Can your character bend fire?"
-  },
-  {
-    "trait": "abilities_floating",
-    "group": "abilities",
-    "question": "Can your character float?"
-  },
-  {
-    "trait": "abilities_flying",
-    "group": "abilities",
-    "question": "Can your character fly?"
-  },
-  {
-    "trait": "abilities_force_user",
-    "group": "abilities",
-    "question": "Does your character have the ability to use 'force'?"
-  },
-  {
-    "trait": "abilities_gadgets",
-    "group": "abilities",
-    "question": "Does your character have the ability to use 'gadgets'?"
-  },
-  {
-    "trait": "abilities_god_powers",
-    "group": "abilities",
-    "question": "Does your character have the ability to wield 'god powers'?"
-  },
-  {
-    "trait": "abilities_gun_user",
-    "group": "abilities",
-    "question": "Is your character skilled in using guns?"
-  },
-  {
-    "trait": "abilities_hacking",
-    "group": "abilities",
-    "question": "Can your character hack?"
-  },
-  {
-    "trait": "abilities_hammer_user",
-    "group": "abilities",
-    "question": "Is your character proficient in using a hammer?"
-  },
-  {
-    "trait": "abilities_hardening",
-    "group": "abilities",
-    "question": "Can your character harden themselves?"
-  },
-  {
-    "trait": "abilities_healing",
-    "group": "abilities",
-    "question": "Can your character heal others?"
-  },
-  {
-    "trait": "abilities_ice_magic",
-    "group": "abilities",
-    "question": "Can your character wield 'ice magic'?"
-  },
-  {
-    "trait": "abilities_illusions",
-    "group": "abilities",
-    "question": "Can your character create illusions?"
-  },
-  {
-    "trait": "abilities_immunity",
-    "group": "abilities",
-    "question": "Does your character have the ability of 'immunity'?"
-  },
-  {
-    "trait": "abilities_intelligent",
-    "group": "abilities",
-    "question": "Does your character have the ability of being 'intelligent'?"
-  },
-  {
-    "trait": "abilities_inventions",
-    "group": "abilities",
-    "question": "Does your character have the ability related to 'inventions'?"
-  },
-  {
-    "trait": "abilities_invulnerability",
-    "group": "abilities",
-    "question": "Does your character have the ability of 'invulnerability'?"
-  },
-  {
-    "trait": "abilities_karate",
-    "group": "abilities",
-    "question": "Does your character have the ability in 'karate'?"
-  },
-  {
-    "trait": "abilities_keen_senses",
-    "group": "abilities",
-    "question": "Does your character have the ability of 'keen senses'?"
-  },
-  {
-    "trait": "abilities_ki_control",
-    "group": "abilities",
-    "question": "Does your character have the ability in 'ki control'?"
-  },
-  {
-    "trait": "abilities_knife_user",
-    "group": "abilities",
-    "question": "Is your character skilled as a 'knife user'?"
-  },
-  {
-    "trait": "abilities_laser_vision",
-    "group": "abilities",
-    "question": "Does your character possess 'laser vision' ability?"
-  },
-  {
-    "trait": "abilities_lasso",
-    "group": "abilities",
-    "question": "Does your character have the skill of using a 'lasso'?"
-  },
-  {
-    "trait": "abilities_leadership",
-    "group": "abilities",
-    "question": "Does your character have the ability of 'leadership'?"
-  },
-  {
-    "trait": "abilities_legal_expertise",
-    "group": "abilities",
-    "question": "Does your character possess 'legal expertise'?"
-  },
-  {
-    "trait": "abilities_light_power",
-    "group": "abilities",
-    "question": "Can your character manipulate 'light power'?"
-  },
-  {
-    "trait": "abilities_lightning",
-    "group": "abilities",
-    "question": "Is your character capable of using 'lightning'?"
-  },
-  {
-    "trait": "abilities_lightning_attacks",
-    "group": "abilities",
-    "question": "Can your character unleash 'lightning attacks'?"
-  },
-  {
-    "trait": "abilities_lightning_control",
-    "group": "abilities",
-    "question": "Does your character control 'lightning'?"
-  },
-  {
-    "trait": "abilities_lightning_redirection",
-    "group": "abilities",
-    "question": "Can your character redirect 'lightning'?"
-  },
-  {
-    "trait": "abilities_lightsaber",
-    "group": "abilities",
-    "question": "Does your character wield a 'lightsaber'?"
-  },
-  {
-    "trait": "abilities_living_snowman",
-    "group": "abilities",
-    "question": "Can your character transform into a 'living snowman'?"
-  },
-  {
-    "trait": "abilities_luck",
-    "group": "abilities",
-    "question": "Does your character possess the ability of 'luck'?"
-  },
-  {
-    "trait": "abilities_magic",
-    "group": "abilities",
-    "question": "Does your character possess the ability of magic?"
-  },
-  {
-    "trait": "abilities_magic_items",
-    "group": "abilities",
-    "question": "Does your character possess the ability of using magic items?"
-  },
-  {
-    "trait": "abilities_magic_signs",
-    "group": "abilities",
-    "question": "Does your character possess the ability related to magic signs?"
-  },
-  {
-    "trait": "abilities_manipulation",
-    "group": "abilities",
-    "question": "Can your character manipulate things?"
-  },
-  {
-    "trait": "abilities_martial_arts",
-    "group": "abilities",
-    "question": "Is your character skilled in martial arts?"
-  },
-  {
-    "trait": "abilities_medical_skills",
-    "group": "abilities",
-    "question": "Does your character have medical skills?"
-  },
-  {
-    "trait": "abilities_mind_control",
-    "group": "abilities",
-    "question": "Can your character control minds?"
-  },
-  {
-    "trait": "abilities_monster_hunting",
-    "group": "abilities",
-    "question": "Is your character skilled in hunting monsters?"
-  },
-  {
-    "trait": "abilities_music",
-    "group": "abilities",
-    "question": "Does your character have musical abilities?"
-  },
-  {
-    "trait": "abilities_navigation",
-    "group": "abilities",
-    "question": "Is your character good at navigation?"
-  },
-  {
-    "trait": "abilities_ninjutsu",
-    "group": "abilities",
-    "question": "Does your character have the ability of 'ninjutsu'?"
-  },
-  {
-    "trait": "abilities_ogre_powers",
-    "group": "abilities",
-    "question": "Does your character possess 'ogre powers'?"
-  },
-  {
-    "trait": "abilities_persuasion",
-    "group": "abilities",
-    "question": "Can your character persuade others?"
-  },
-  {
-    "trait": "abilities_piloting",
-    "group": "abilities",
-    "question": "Is your character skilled in piloting?"
-  },
-  {
-    "trait": "abilities_pokemon_trainer",
-    "group": "abilities",
-    "question": "Is your character a 'pokemon trainer'?"
-  },
-  {
-    "trait": "abilities_power_ups",
-    "group": "abilities",
-    "question": "Can your character use 'power ups'?"
-  },
-  {
-    "trait": "abilities_powerful_magic",
-    "group": "abilities",
-    "question": "Does your character wield 'powerful magic'?"
-  },
-  {
-    "trait": "abilities_pranks",
-    "group": "abilities",
-    "question": "Is your character known for pulling pranks?"
-  },
-  {
-    "trait": "abilities_psychic_powers",
-    "group": "abilities",
-    "question": "Does your character possess 'psychic powers'?"
-  },
-  {
-    "trait": "abilities_rage_mode",
-    "group": "abilities",
-    "question": "Can your character enter 'rage mode'?"
-  },
-  {
-    "trait": "abilities_rage_power",
-    "group": "abilities",
-    "question": "Does your character have the ability of 'rage power'?"
-  },
-  {
-    "trait": "abilities_rasengan",
-    "group": "abilities",
-    "question": "Does your character have the ability of 'rasengan'?"
-  },
-  {
-    "trait": "abilities_reality_manipulation",
-    "group": "abilities",
-    "question": "Does your character have the ability of 'reality manipulation'?"
-  },
-  {
-    "trait": "abilities_regeneration",
-    "group": "abilities",
-    "question": "Does your character have the ability of 'regeneration'?"
-  },
-  {
-    "trait": "abilities_resurrection",
-    "group": "abilities",
-    "question": "Does your character have the ability of 'resurrection'?"
-  },
-  {
-    "trait": "abilities_ring_bearer",
-    "group": "abilities",
-    "question": "Does your character have the ability of 'ring bearer'?"
-  },
-  {
-    "trait": "abilities_roar",
-    "group": "abilities",
-    "question": "Does your character have the ability of 'roar'?"
-  },
-  {
-    "trait": "abilities_robotics",
-    "group": "abilities",
-    "question": "Does your character have the ability of 'robotics'?"
-  },
-  {
-    "trait": "abilities_running",
-    "group": "abilities",
-    "question": "Does your character have the ability of 'running'?"
-  },
-  {
-    "trait": "abilities_shadow_clones",
-    "group": "abilities",
-    "question": "Does your character have the ability of 'shadow clones'?"
-  },
-  {
-    "trait": "abilities_shapeshifting",
-    "group": "abilities",
-    "question": "Can your character shapeshift?"
-  },
-  {
-    "trait": "abilities_sharingan",
-    "group": "abilities",
-    "question": "Does your character possess the sharingan ability?"
-  },
-  {
-    "trait": "abilities_shell_defense",
-    "group": "abilities",
-    "question": "Does your character use shell defense?"
-  },
-  {
-    "trait": "abilities_shield_user",
-    "group": "abilities",
-    "question": "Is your character skilled in shield usage?"
-  },
-  {
-    "trait": "abilities_skateboarding",
-    "group": "abilities",
-    "question": "Can your character skateboard?"
-  },
-  {
-    "trait": "abilities_snow_creation",
-    "group": "abilities",
-    "question": "Can your character create snow?"
-  },
-  {
-    "trait": "abilities_spider_sense",
-    "group": "abilities",
-    "question": "Does your character have spider sense?"
-  },
-  {
-    "trait": "abilities_spin_attack",
-    "group": "abilities",
-    "question": "Can your character perform a spin attack?"
-  },
-  {
-    "trait": "abilities_staff_user",
-    "group": "abilities",
-    "question": "Is your character proficient in using a staff?"
-  },
-  {
-    "trait": "abilities_stealth",
-    "group": "abilities",
-    "question": "Does your character have stealth abilities?"
-  },
-  {
-    "trait": "abilities_strategy",
-    "group": "abilities",
-    "question": "Does your character have the ability to strategize?"
-  },
-  {
-    "trait": "abilities_street_smarts",
-    "group": "abilities",
-    "question": "Does your character have street smarts?"
-  },
-  {
-    "trait": "abilities_stretching",
-    "group": "abilities",
-    "question": "Can your character stretch?"
-  },
-  {
-    "trait": "abilities_super_agility",
-    "group": "abilities",
-    "question": "Is your character super agile?"
-  },
-  {
-    "trait": "abilities_super_intelligence",
-    "group": "abilities",
-    "question": "Does your character possess super intelligence?"
-  },
-  {
-    "trait": "abilities_super_jump",
-    "group": "abilities",
-    "question": "Can your character make super jumps?"
-  },
-  {
-    "trait": "abilities_super_speed",
-    "group": "abilities",
-    "question": "Is your character super fast?"
-  },
-  {
-    "trait": "abilities_super_strength",
-    "group": "abilities",
-    "question": "Does your character have super strength?"
-  },
-  {
-    "trait": "abilities_survival_skills",
-    "group": "abilities",
-    "question": "Does your character possess survival skills?"
-  },
-  {
-    "trait": "abilities_sword_user",
-    "group": "abilities",
-    "question": "Is your character skilled in using swords?"
-  },
-  {
-    "trait": "abilities_talking",
-    "group": "abilities",
-    "question": "Can your character talk?"
-  },
-  {
-    "trait": "abilities_tech_genius",
-    "group": "abilities",
-    "question": "Is your character a tech genius?"
-  },
-  {
-    "trait": "abilities_telekinesis",
-    "group": "abilities",
-    "question": "Can your character move things with their mind (telekinesis)?"
-  },
-  {
-    "trait": "abilities_telepathy",
-    "group": "abilities",
-    "question": "Can your character read minds (telepathy)?"
-  },
-  {
-    "trait": "abilities_teleportation",
-    "group": "abilities",
-    "question": "Can your character instantly move from one place to another (teleportation)?"
-  },
-  {
-    "trait": "abilities_three_sword_style",
-    "group": "abilities",
-    "question": "Is your character skilled in using three swords (three sword style)?"
-  },
-  {
-    "trait": "abilities_time_space_manipulation",
-    "group": "abilities",
-    "question": "Can your character manipulate time and space?"
-  },
-  {
-    "trait": "abilities_titan_shifting",
-    "group": "abilities",
-    "question": "Can your character shift into a titan?"
-  },
-  {
-    "trait": "abilities_transformation",
-    "group": "abilities",
-    "question": "Can your character transform into something else?"
-  },
-  {
-    "trait": "abilities_treasure_hunting",
-    "group": "abilities",
-    "question": "Is your character skilled in hunting for treasures?"
-  },
-  {
-    "trait": "abilities_underwater_breathing",
-    "group": "abilities",
-    "question": "Can your character breathe underwater?"
-  },
-  {
-    "trait": "abilities_unpredictable",
-    "group": "abilities",
-    "question": "Is your character unpredictable?"
-  },
-  {
-    "trait": "abilities_wall_crawling",
-    "group": "abilities",
-    "question": "Can your character crawl on walls?"
-  },
-  {
-    "trait": "abilities_warging",
-    "group": "abilities",
-    "question": "Can your character warg?"
-  },
-  {
-    "trait": "abilities_waterbending",
-    "group": "abilities",
-    "question": "Can your character bend water?"
-  },
-  {
-    "trait": "abilities_weapon_master",
-    "group": "abilities",
-    "question": "Is your character a master with weapons?"
-  },
-  {
-    "trait": "abilities_weapon_user",
-    "group": "abilities",
-    "question": "Does your character use weapons?"
-  },
-  {
-    "trait": "abilities_weather_control",
-    "group": "abilities",
-    "question": "Can your character control the weather?"
-  },
-  {
-    "trait": "abilities_web_shooting",
-    "group": "abilities",
-    "question": "Can your character shoot webs?"
-  },
-  {
-    "trait": "abilities_whip_user",
-    "group": "abilities",
-    "question": "Is your character skilled with a whip?"
-  },
-  {
-    "trait": "abilities_winter_control",
-    "group": "abilities",
-    "question": "Does your character have the ability to control winter?"
-  },
-  {
-    "trait": "abilities_wisdom",
-    "group": "abilities",
-    "question": "Does your character have the ability of wisdom?"
-  },
-  {
-    "trait": "appearance_athletic",
-    "group": "appearance",
-    "question": "Is your character athletic?"
-  },
-  {
-    "trait": "appearance_bald",
-    "group": "appearance",
-    "question": "Is your character bald?"
-  },
-  {
-    "trait": "appearance_casual_clothes",
-    "group": "appearance",
-    "question": "Does your character wear casual clothes?"
-  },
-  {
-    "trait": "appearance_color_black",
-    "group": "appearance",
-    "question": "Is your character associated with the color black?"
-  },
-  {
-    "trait": "appearance_color_blue",
-    "group": "appearance",
-    "question": "Is your character associated with the color blue?"
-  },
-  {
-    "trait": "appearance_color_gold",
-    "group": "appearance",
-    "question": "Is your character associated with the color gold?"
-  },
-  {
-    "trait": "appearance_color_gray",
-    "group": "appearance",
-    "question": "Is your character associated with the color gray?"
-  },
-  {
-    "trait": "appearance_color_green",
-    "group": "appearance",
-    "question": "Is your character associated with the color green?"
-  },
-  {
-    "trait": "appearance_color_orange",
-    "group": "appearance",
-    "question": "Does your character have any association with the color orange?"
-  },
-  {
-    "trait": "appearance_color_pale",
-    "group": "appearance",
-    "question": "Is your character linked to the color pale?"
-  },
-  {
-    "trait": "appearance_color_pink",
-    "group": "appearance",
-    "question": "Does your character have any connection to the color pink?"
-  },
-  {
-    "trait": "appearance_color_purple",
-    "group": "appearance",
-    "question": "Is your character related to the color purple?"
-  },
-  {
-    "trait": "appearance_color_red",
-    "group": "appearance",
-    "question": "Does your character have any association with the color red?"
-  },
-  {
-    "trait": "appearance_color_teal",
-    "group": "appearance",
-    "question": "Is your character linked to the color teal?"
-  },
-  {
-    "trait": "appearance_color_white",
-    "group": "appearance",
-    "question": "Does your character have any connection to the color white?"
-  },
-  {
-    "trait": "appearance_color_yellow",
-    "group": "appearance",
-    "question": "Is your character related to the color yellow?"
-  },
-  {
-    "trait": "appearance_colorful_suit",
-    "group": "appearance",
-    "question": "Does your character wear a colorful suit?"
-  },
-  {
-    "trait": "appearance_distinctive_braid",
-    "group": "appearance",
-    "question": "Does your character have a distinctive braid?"
-  },
-  {
-    "trait": "appearance_distinctive_ears",
-    "group": "appearance",
-    "question": "Does your character have distinctive ears?"
-  },
-  {
-    "trait": "appearance_distinctive_eyes",
-    "group": "appearance",
-    "question": "Does your character have distinctive eyes?"
-  },
-  {
-    "trait": "appearance_distinctive_face",
-    "group": "appearance",
-    "question": "Does your character have a distinctive face?"
-  },
-  {
-    "trait": "appearance_distinctive_hairstyle",
-    "group": "appearance",
-    "question": "Does your character have a distinctive hairstyle?"
-  },
-  {
-    "trait": "appearance_distinctive_look",
-    "group": "appearance",
-    "question": "Does your character have a distinctive look?"
-  },
-  {
-    "trait": "appearance_distinctive_nose",
-    "group": "appearance",
-    "question": "Does your character have a distinctive nose?"
-  },
-  {
-    "trait": "appearance_distinctive_scar",
-    "group": "appearance",
-    "question": "Does your character have a distinctive scar?"
-  },
-  {
-    "trait": "appearance_distinctive_shoes",
-    "group": "appearance",
-    "question": "Does your character have distinctive shoes?"
-  },
-  {
-    "trait": "appearance_distinctive_tattoo",
-    "group": "appearance",
-    "question": "Does your character have a distinctive tattoo?"
-  },
-  {
-    "trait": "appearance_four_legs",
-    "group": "appearance",
-    "question": "Does your character have four legs?"
-  },
-  {
-    "trait": "appearance_furry",
-    "group": "appearance",
-    "question": "Is your character furry?"
-  },
-  {
-    "trait": "appearance_glowing",
-    "group": "appearance",
-    "question": "Is your character glowing?"
-  },
-  {
-    "trait": "appearance_hair_black",
-    "group": "appearance",
-    "question": "Does your character have black hair?"
-  },
-  {
-    "trait": "appearance_hair_blonde",
-    "group": "appearance",
-    "question": "Does your character have blonde hair?"
-  },
-  {
-    "trait": "appearance_hair_brown",
-    "group": "appearance",
-    "question": "Does your character have brown hair?"
-  },
-  {
-    "trait": "appearance_hair_colorful",
-    "group": "appearance",
-    "question": "Does your character have colorful hair?"
-  },
-  {
-    "trait": "appearance_hair_green",
-    "group": "appearance",
-    "question": "Does your character have green hair?"
-  },
-  {
-    "trait": "appearance_hair_orange",
-    "group": "appearance",
-    "question": "Does your character have orange hair?"
-  },
-  {
-    "trait": "appearance_hair_pink",
-    "group": "appearance",
-    "question": "Does your character have pink hair?"
-  },
-  {
-    "trait": "appearance_hair_red",
-    "group": "appearance",
-    "question": "Does your character have red hair?"
-  },
-  {
-    "trait": "appearance_hair_white",
-    "group": "appearance",
-    "question": "Does your character have white hair?"
-  },
-  {
-    "trait": "appearance_hair_yellow",
-    "group": "appearance",
-    "question": "Does your character have yellow hair?"
-  },
-  {
-    "trait": "appearance_has_armor",
-    "group": "appearance",
-    "question": "Does your character wear armor?"
-  },
-  {
-    "trait": "appearance_has_beard",
-    "group": "appearance",
-    "question": "Does your character have a beard?"
-  },
-  {
-    "trait": "appearance_has_bow",
-    "group": "appearance",
-    "question": "Does your character carry a bow?"
-  },
-  {
-    "trait": "appearance_has_cape",
-    "group": "appearance",
-    "question": "Does your character wear a cape?"
-  },
-  {
-    "trait": "appearance_has_crown",
-    "group": "appearance",
-    "question": "Does your character wear a crown?"
-  },
-  {
-    "trait": "appearance_has_gauntlet",
-    "group": "appearance",
-    "question": "Does your character wear a gauntlet?"
-  },
-  {
-    "trait": "appearance_has_glasses",
-    "group": "appearance",
-    "question": "Does your character wear glasses?"
-  },
-  {
-    "trait": "appearance_has_goatee",
-    "group": "appearance",
-    "question": "Does your character have a goatee?"
-  },
-  {
-    "trait": "appearance_has_gun",
-    "group": "appearance",
-    "question": "Does your character have a gun?"
-  },
-  {
-    "trait": "appearance_has_hammer",
-    "group": "appearance",
-    "question": "Does your character have a hammer?"
-  },
-  {
-    "trait": "appearance_has_hat",
-    "group": "appearance",
-    "question": "Does your character have a hat?"
-  },
-  {
-    "trait": "appearance_has_headband",
-    "group": "appearance",
-    "question": "Does your character have a headband?"
-  },
-  {
-    "trait": "appearance_has_helmet",
-    "group": "appearance",
-    "question": "Does your character have a helmet?"
-  },
-  {
-    "trait": "appearance_has_horned_helmet",
-    "group": "appearance",
-    "question": "Does your character have a horned helmet?"
-  },
-  {
-    "trait": "appearance_has_horns",
-    "group": "appearance",
-    "question": "Does your character have horns?"
-  },
-  {
-    "trait": "appearance_has_lightsaber",
-    "group": "appearance",
-    "question": "Does your character have a lightsaber?"
-  },
-  {
-    "trait": "appearance_has_mask",
-    "group": "appearance",
-    "question": "Does your character have a mask?"
-  },
-  {
-    "trait": "appearance_has_mustache",
-    "group": "appearance",
-    "question": "Does your character have a mustache?"
-  },
-  {
-    "trait": "appearance_has_ring",
-    "group": "appearance",
-    "question": "Does your character have a ring?"
-  },
-  {
-    "trait": "appearance_has_scar",
-    "group": "appearance",
-    "question": "Does your character have a scar?"
-  },
-  {
-    "trait": "appearance_has_scarf",
-    "group": "appearance",
-    "question": "Does your character have a scarf?"
-  },
-  {
-    "trait": "appearance_has_shell",
-    "group": "appearance",
-    "question": "Does your character have a shell?"
-  },
-  {
-    "trait": "appearance_has_shield",
-    "group": "appearance",
-    "question": "Does your character have a shield?"
-  },
-  {
-    "trait": "appearance_has_staff",
-    "group": "appearance",
-    "question": "Does your character have a staff?"
-  },
-  {
-    "trait": "appearance_has_sword",
-    "group": "appearance",
-    "question": "Does your character have a sword?"
-  },
-  {
-    "trait": "appearance_has_symbol",
-    "group": "appearance",
-    "question": "Does your character have a symbol?"
-  },
-  {
-    "trait": "appearance_has_tail",
-    "group": "appearance",
-    "question": "Does your character have a tail?"
-  },
-  {
-    "trait": "appearance_has_vest",
-    "group": "appearance",
-    "question": "Does your character have a vest?"
-  },
-  {
-    "trait": "appearance_has_weapon",
-    "group": "appearance",
-    "question": "Does your character have a weapon?"
-  },
-  {
-    "trait": "appearance_has_whip",
-    "group": "appearance",
-    "question": "Does your character have a whip?"
-  },
-  {
-    "trait": "appearance_height_average",
-    "group": "appearance",
-    "question": "Is your character of average height?"
-  },
-  {
-    "trait": "appearance_height_short",
-    "group": "appearance",
-    "question": "Is your character short?"
-  },
-  {
-    "trait": "appearance_height_tall",
-    "group": "appearance",
-    "question": "Is your character tall?"
-  },
-  {
-    "trait": "appearance_holographic",
-    "group": "appearance",
-    "question": "Is your character holographic?"
-  },
-  {
-    "trait": "appearance_iconic_mask",
-    "group": "appearance",
-    "question": "Does your character wear an iconic mask?"
-  },
-  {
-    "trait": "appearance_made_of_snow",
-    "group": "appearance",
-    "question": "Is your character made of snow?"
-  },
-  {
-    "trait": "appearance_monstrous",
-    "group": "appearance",
-    "question": "Is your character monstrous?"
-  },
-  {
-    "trait": "appearance_muscular",
-    "group": "appearance",
-    "question": "Is your character muscular?"
-  },
-  {
-    "trait": "appearance_no_shirt",
-    "group": "appearance",
-    "question": "Does your character not wear a shirt?"
-  },
-  {
-    "trait": "appearance_overweight",
-    "group": "appearance",
-    "question": "Is your character overweight?"
-  },
-  {
-    "trait": "appearance_pointed_ears",
-    "group": "appearance",
-    "question": "Does your character have pointed ears?"
-  },
-  {
-    "trait": "appearance_spiky_hair",
-    "group": "appearance",
-    "question": "Does your character have spiky hair?"
-  },
-  {
-    "trait": "appearance_square_shaped",
-    "group": "appearance",
-    "question": "Is your character square-shaped?"
-  },
-  {
-    "trait": "appearance_wears_armor",
-    "group": "appearance",
-    "question": "Does your character wear armor?"
-  },
-  {
-    "trait": "appearance_wears_coat",
-    "group": "appearance",
-    "question": "Does your character wear a coat?"
-  },
-  {
-    "trait": "appearance_wears_dress",
-    "group": "appearance",
-    "question": "Does your character wear a dress?"
-  },
-  {
-    "trait": "appearance_wears_fur",
-    "group": "appearance",
-    "question": "Does your character wear fur?"
-  },
-  {
-    "trait": "appearance_wears_jacket",
-    "group": "appearance",
-    "question": "Does your character wear a jacket?"
-  },
-  {
-    "trait": "appearance_wears_mask",
-    "group": "appearance",
-    "question": "Does your character wear a mask?"
-  },
-  {
-    "trait": "appearance_wears_robe",
-    "group": "appearance",
-    "question": "Does your character wear a robe?"
-  },
-  {
-    "trait": "appearance_wears_suit",
-    "group": "appearance",
-    "question": "Does your character wear a suit?"
-  },
-  {
-    "trait": "appearance_wears_uniform",
-    "group": "appearance",
-    "question": "Does your character wear a uniform?"
-  },
-  {
-    "trait": "archetype_activist",
-    "group": "archetype",
-    "question": "Is your character an activist archetype?"
-  },
-  {
-    "trait": "archetype_adventurer",
-    "group": "archetype",
-    "question": "Is your character an adventurer archetype?"
-  },
-  {
-    "trait": "archetype_advisor",
-    "group": "archetype",
-    "question": "Is your character an advisor archetype?"
-  },
-  {
-    "trait": "archetype_agent",
-    "group": "archetype",
-    "question": "Is your character an agent archetype?"
-  },
-  {
-    "trait": "archetype_ai",
-    "group": "archetype",
-    "question": "Is your character an AI archetype?"
-  },
-  {
-    "trait": "archetype_alien",
-    "group": "archetype",
-    "question": "Is your character an alien archetype?"
-  },
-  {
-    "trait": "archetype_ambassador",
-    "group": "archetype",
-    "question": "Is your character an ambassador archetype?"
-  },
-  {
-    "trait": "archetype_archaeologist",
-    "group": "archetype",
-    "question": "Is your character an archaeologist archetype?"
-  },
-  {
-    "trait": "archetype_archer",
-    "group": "archetype",
-    "question": "Is your character an archer archetype?"
-  },
-  {
-    "trait": "archetype_artist",
-    "group": "archetype",
-    "question": "Is your character an artist archetype?"
-  },
-  {
-    "trait": "archetype_assassin",
-    "group": "archetype",
-    "question": "Is your character an assassin archetype?"
-  },
-  {
-    "trait": "archetype_athlete",
-    "group": "archetype",
-    "question": "Is your character an athlete archetype?"
-  },
-  {
-    "trait": "archetype_avatar",
-    "group": "archetype",
-    "question": "Is your character an avatar archetype?"
-  },
-  {
-    "trait": "archetype_avenger",
-    "group": "archetype",
-    "question": "Is your character an avenger archetype?"
-  },
-  {
-    "trait": "archetype_baker",
-    "group": "archetype",
-    "question": "Is your character a baker archetype?"
-  },
-  {
-    "trait": "archetype_bastard",
-    "group": "archetype",
-    "question": "Is your character a bastard archetype?"
-  },
-  {
-    "trait": "archetype_billionaire",
-    "group": "archetype",
-    "question": "Is your character a billionaire archetype?"
-  },
-  {
-    "trait": "archetype_bodyguard",
-    "group": "archetype",
-    "question": "Is your character a bodyguard archetype?"
-  },
-  {
-    "trait": "archetype_burglar",
-    "group": "archetype",
-    "question": "Is your character a burglar archetype?"
-  },
-  {
-    "trait": "archetype_captain",
-    "group": "archetype",
-    "question": "Is your character a captain archetype?"
-  },
-  {
-    "trait": "archetype_cashier",
-    "group": "archetype",
-    "question": "Is your character a cashier archetype?"
-  },
-  {
-    "trait": "archetype_chemist",
-    "group": "archetype",
-    "question": "Is your character a chemist archetype?"
-  },
-  {
-    "trait": "archetype_clown",
-    "group": "archetype",
-    "question": "Is your character a clown archetype?"
-  },
-  {
-    "trait": "archetype_comic_relief",
-    "group": "archetype",
-    "question": "Is your character a comic relief archetype?"
-  },
-  {
-    "trait": "archetype_commander",
-    "group": "archetype",
-    "question": "Is your character a commander archetype?"
-  },
-  {
-    "trait": "archetype_companion",
-    "group": "archetype",
-    "question": "Is your character a companion archetype?"
-  },
-  {
-    "trait": "archetype_con_artist",
-    "group": "archetype",
-    "question": "Is your character a con artist archetype?"
-  },
-  {
-    "trait": "archetype_conqueror",
-    "group": "archetype",
-    "question": "Is your character a conqueror archetype?"
-  },
-  {
-    "trait": "archetype_consultant",
-    "group": "archetype",
-    "question": "Is your character a consultant archetype?"
-  },
-  {
-    "trait": "archetype_cook",
-    "group": "archetype",
-    "question": "Is your character a cook archetype?"
-  },
-  {
-    "trait": "archetype_criminal",
-    "group": "archetype",
-    "question": "Is your character a criminal archetype?"
-  },
-  {
-    "trait": "archetype_detective",
-    "group": "archetype",
-    "question": "Is your character a detective archetype?"
-  },
-  {
-    "trait": "archetype_dictator",
-    "group": "archetype",
-    "question": "Is your character a dictator archetype?"
-  },
-  {
-    "trait": "archetype_diplomat",
-    "group": "archetype",
-    "question": "Is your character a diplomat archetype?"
-  },
-  {
-    "trait": "archetype_doctor",
-    "group": "archetype",
-    "question": "Is your character a doctor archetype?"
-  },
-  {
-    "trait": "archetype_dragonrider",
-    "group": "archetype",
-    "question": "Is your character a dragonrider archetype?"
-  },
-  {
-    "trait": "archetype_dropout",
-    "group": "archetype",
-    "question": "Is your character an example of a dropout archetype?"
-  },
-  {
-    "trait": "archetype_drug_dealer",
-    "group": "archetype",
-    "question": "Is your character an example of a drug dealer archetype?"
-  },
-  {
-    "trait": "archetype_drug_lord",
-    "group": "archetype",
-    "question": "Is your character an example of a drug lord archetype?"
-  },
-  {
-    "trait": "archetype_engineer",
-    "group": "archetype",
-    "question": "Is your character an example of an engineer archetype?"
-  },
-  {
-    "trait": "archetype_everyman",
-    "group": "archetype",
-    "question": "Is your character an example of an everyman archetype?"
-  },
-  {
-    "trait": "archetype_experiment",
-    "group": "archetype",
-    "question": "Is your character an example of an experiment archetype?"
-  },
-  {
-    "trait": "archetype_explorer",
-    "group": "archetype",
-    "question": "Is your character an example of an explorer archetype?"
-  },
-  {
-    "trait": "archetype_farmer",
-    "group": "archetype",
-    "question": "Is your character an example of a farmer archetype?"
-  },
-  {
-    "trait": "archetype_father",
-    "group": "archetype",
-    "question": "Is your character an example of a father archetype?"
-  },
-  {
-    "trait": "archetype_fighter",
-    "group": "archetype",
-    "question": "Is your character an example of a fighter archetype?"
-  },
-  {
-    "trait": "archetype_firebender",
-    "group": "archetype",
-    "question": "Is your character a firebender archetype?"
-  },
-  {
-    "trait": "archetype_fixer",
-    "group": "archetype",
-    "question": "Is your character a fixer archetype?"
-  },
-  {
-    "trait": "archetype_friend",
-    "group": "archetype",
-    "question": "Is your character a friend archetype?"
-  },
-  {
-    "trait": "archetype_fry_cook",
-    "group": "archetype",
-    "question": "Is your character a fry cook archetype?"
-  },
-  {
-    "trait": "archetype_genius",
-    "group": "archetype",
-    "question": "Is your character a genius archetype?"
-  },
-  {
-    "trait": "archetype_god",
-    "group": "archetype",
-    "question": "Is your character a god archetype?"
-  },
-  {
-    "trait": "archetype_god_complex",
-    "group": "archetype",
-    "question": "Is your character a god complex archetype?"
-  },
-  {
-    "trait": "archetype_hacker",
-    "group": "archetype",
-    "question": "Is your character a hacker archetype?"
-  },
-  {
-    "trait": "archetype_headmaster",
-    "group": "archetype",
-    "question": "Is your character a headmaster archetype?"
-  },
-  {
-    "trait": "archetype_healer",
-    "group": "archetype",
-    "question": "Is your character a healer archetype?"
-  },
-  {
-    "trait": "archetype_hermit",
-    "group": "archetype",
-    "question": "Is your character a hermit archetype?"
-  },
-  {
-    "trait": "archetype_hero",
-    "group": "archetype",
-    "question": "Is your character a hero archetype?"
-  },
-  {
-    "trait": "archetype_hokage",
-    "group": "archetype",
-    "question": "Is your character a hokage archetype?"
-  },
-  {
-    "trait": "archetype_hunter",
-    "group": "archetype",
-    "question": "Is your character a hunter archetype?"
-  },
-  {
-    "trait": "archetype_immune",
-    "group": "archetype",
-    "question": "Is your character an immune archetype?"
-  },
-  {
-    "trait": "archetype_inventor",
-    "group": "archetype",
-    "question": "Is your character an inventor archetype?"
-  },
-  {
-    "trait": "archetype_investigator",
-    "group": "archetype",
-    "question": "Is your character an investigator archetype?"
-  },
-  {
-    "trait": "archetype_jedi",
-    "group": "archetype",
-    "question": "Is your character a Jedi archetype?"
-  },
-  {
-    "trait": "archetype_jester",
-    "group": "archetype",
-    "question": "Is your character a jester archetype?"
-  },
-  {
-    "trait": "archetype_journalist",
-    "group": "archetype",
-    "question": "Is your character a journalist archetype?"
-  },
-  {
-    "trait": "archetype_king",
-    "group": "archetype",
-    "question": "Is your character a king archetype?"
-  },
-  {
-    "trait": "archetype_knight",
-    "group": "archetype",
-    "question": "Is your character a knight archetype?"
-  },
-  {
-    "trait": "archetype_lawyer",
-    "group": "archetype",
-    "question": "Is your character a lawyer archetype?"
-  },
-  {
-    "trait": "archetype_leader",
-    "group": "archetype",
-    "question": "Is your character a leader archetype?"
-  },
-  {
-    "trait": "archetype_martial_artist",
-    "group": "archetype",
-    "question": "Is your character a martial artist archetype?"
-  },
-  {
-    "trait": "archetype_medic",
-    "group": "archetype",
-    "question": "Is your character a medic archetype?"
-  },
-  {
-    "trait": "archetype_mentor",
-    "group": "archetype",
-    "question": "Is your character a mentor archetype?"
-  },
-  {
-    "trait": "archetype_mercenary",
-    "group": "archetype",
-    "question": "Is your character a mercenary archetype?"
-  },
-  {
-    "trait": "archetype_monk",
-    "group": "archetype",
-    "question": "Is your character a monk archetype?"
-  },
-  {
-    "trait": "archetype_monster",
-    "group": "archetype",
-    "question": "Is your character a monster archetype?"
-  },
-  {
-    "trait": "archetype_monster_hunter",
-    "group": "archetype",
-    "question": "Is your character a monster hunter archetype?"
-  },
-  {
-    "trait": "archetype_musician",
-    "group": "archetype",
-    "question": "Is your character a musician archetype?"
-  },
-  {
-    "trait": "archetype_navigator",
-    "group": "archetype",
-    "question": "Is your character a navigator archetype?"
-  },
-  {
-    "trait": "archetype_ninja",
-    "group": "archetype",
-    "question": "Is your character a ninja archetype?"
-  },
-  {
-    "trait": "archetype_nobleman",
-    "group": "archetype",
-    "question": "Is your character a nobleman archetype?"
-  },
-  {
-    "trait": "archetype_nuclear_technician",
-    "group": "archetype",
-    "question": "Is your character a nuclear technician archetype?"
-  },
-  {
-    "trait": "archetype_ogre",
-    "group": "archetype",
-    "question": "Is your character an ogre archetype?"
-  },
-  {
-    "trait": "archetype_optimist",
-    "group": "archetype",
-    "question": "Is your character an optimist archetype?"
-  },
-  {
-    "trait": "archetype_peacekeeper",
-    "group": "archetype",
-    "question": "Is your character a peacekeeper archetype?"
-  },
-  {
-    "trait": "archetype_photographer",
-    "group": "archetype",
-    "question": "Is your character a photographer archetype?"
-  },
-  {
-    "trait": "archetype_pilot",
-    "group": "archetype",
-    "question": "Is your character a pilot archetype?"
-  },
-  {
-    "trait": "archetype_pirate",
-    "group": "archetype",
-    "question": "Is your character a pirate archetype?"
-  },
-  {
-    "trait": "archetype_plumber",
-    "group": "archetype",
-    "question": "Is your character a plumber archetype?"
-  },
-  {
-    "trait": "archetype_pokemon",
-    "group": "archetype",
-    "question": "Is your character a Pokemon archetype?"
-  },
-  {
-    "trait": "archetype_politician",
-    "group": "archetype",
-    "question": "Is your character a politician archetype?"
-  },
-  {
-    "trait": "archetype_prankster",
-    "group": "archetype",
-    "question": "Is your character a prankster archetype?"
-  },
-  {
-    "trait": "archetype_prince",
-    "group": "archetype",
-    "question": "Is your character a prince archetype?"
-  },
-  {
-    "trait": "archetype_princess",
-    "group": "archetype",
-    "question": "Is your character a princess archetype?"
-  },
-  {
-    "trait": "archetype_professor",
-    "group": "archetype",
-    "question": "Is your character a professor archetype?"
-  },
-  {
-    "trait": "archetype_protector",
-    "group": "archetype",
-    "question": "Is your character a protector archetype?"
-  },
-  {
-    "trait": "archetype_psychiatrist",
-    "group": "archetype",
-    "question": "Is your character a psychiatrist archetype?"
-  },
-  {
-    "trait": "archetype_psychic",
-    "group": "archetype",
-    "question": "Is your character a psychic archetype?"
-  },
-  {
-    "trait": "archetype_queen",
-    "group": "archetype",
-    "question": "Is your character a queen archetype?"
-  },
-  {
-    "trait": "archetype_ranger",
-    "group": "archetype",
-    "question": "Is your character a ranger archetype?"
-  },
-  {
-    "trait": "archetype_rebel",
-    "group": "archetype",
-    "question": "Is your character a rebel archetype?"
-  },
-  {
-    "trait": "archetype_rebel_leader",
-    "group": "archetype",
-    "question": "Is your character a rebel leader archetype?"
-  },
-  {
-    "trait": "archetype_ring_bearer",
-    "group": "archetype",
-    "question": "Is your character a ring bearer archetype?"
-  },
-  {
-    "trait": "archetype_rogue",
-    "group": "archetype",
-    "question": "Is your character a rogue archetype?"
-  },
-  {
-    "trait": "archetype_royalty",
-    "group": "archetype",
-    "question": "Is your character a royalty archetype?"
-  },
-  {
-    "trait": "archetype_ruler",
-    "group": "archetype",
-    "question": "Is your character a ruler archetype?"
-  },
-  {
-    "trait": "archetype_sage",
-    "group": "archetype",
-    "question": "Is your character a wise sage?"
-  },
-  {
-    "trait": "archetype_scholar",
-    "group": "archetype",
-    "question": "Is your character a knowledgeable scholar?"
-  },
-  {
-    "trait": "archetype_scientist",
-    "group": "archetype",
-    "question": "Is your character a scientific-minded individual?"
-  },
-  {
-    "trait": "archetype_scoundrel",
-    "group": "archetype",
-    "question": "Is your character a cunning scoundrel?"
-  },
-  {
-    "trait": "archetype_serial_killer",
-    "group": "archetype",
-    "question": "Is your character a notorious serial killer?"
-  },
-  {
-    "trait": "archetype_sheriff",
-    "group": "archetype",
-    "question": "Is your character a law-abiding sheriff?"
-  },
-  {
-    "trait": "archetype_sith_lord",
-    "group": "archetype",
-    "question": "Is your character a powerful sith lord?"
-  },
-  {
-    "trait": "archetype_slayer",
-    "group": "archetype",
-    "question": "Is your character a fierce slayer?"
-  },
-  {
-    "trait": "archetype_smuggler",
-    "group": "archetype",
-    "question": "Is your character a sneaky smuggler?"
-  },
-  {
-    "trait": "archetype_snowman",
-    "group": "archetype",
-    "question": "Is your character a frosty snowman?"
-  },
-  {
-    "trait": "archetype_soldier",
-    "group": "archetype",
-    "question": "Is your character a soldier archetype?"
-  },
-  {
-    "trait": "archetype_sorcerer",
-    "group": "archetype",
-    "question": "Is your character a sorcerer archetype?"
-  },
-  {
-    "trait": "archetype_sorceress",
-    "group": "archetype",
-    "question": "Is your character a sorceress archetype?"
-  },
-  {
-    "trait": "archetype_speedster",
-    "group": "archetype",
-    "question": "Is your character a speedster archetype?"
-  },
-  {
-    "trait": "archetype_spy",
-    "group": "archetype",
-    "question": "Is your character a spy archetype?"
-  },
-  {
-    "trait": "archetype_starfish",
-    "group": "archetype",
-    "question": "Is your character a starfish archetype?"
-  },
-  {
-    "trait": "archetype_strategist",
-    "group": "archetype",
-    "question": "Is your character a strategist archetype?"
-  },
-  {
-    "trait": "archetype_student",
-    "group": "archetype",
-    "question": "Is your character a student archetype?"
-  },
-  {
-    "trait": "archetype_super_soldier",
-    "group": "archetype",
-    "question": "Is your character a super soldier archetype?"
-  },
-  {
-    "trait": "archetype_superhero",
-    "group": "archetype",
-    "question": "Is your character a superhero archetype?"
-  },
-  {
-    "trait": "archetype_survivor",
-    "group": "archetype",
-    "question": "Is your character a survivor archetype?"
-  },
-  {
-    "trait": "archetype_swordsman",
-    "group": "archetype",
-    "question": "Is your character a swordsman archetype?"
-  },
-  {
-    "trait": "archetype_teacher",
-    "group": "archetype",
-    "question": "Is your character a teacher archetype?"
-  },
-  {
-    "trait": "archetype_terrorist",
-    "group": "archetype",
-    "question": "Is your character a terrorist archetype?"
-  },
-  {
-    "trait": "archetype_thief",
-    "group": "archetype",
-    "question": "Is your character a thief archetype?"
-  },
-  {
-    "trait": "archetype_titan",
-    "group": "archetype",
-    "question": "Is your character a titan archetype?"
-  },
-  {
-    "trait": "archetype_titan_shifter",
-    "group": "archetype",
-    "question": "Is your character a titan shifter archetype?"
-  },
-  {
-    "trait": "archetype_trainer",
-    "group": "archetype",
-    "question": "Is your character a trainer archetype?"
-  },
-  {
-    "trait": "archetype_treasure_hunter",
-    "group": "archetype",
-    "question": "Is your character a treasure hunter archetype?"
-  },
-  {
-    "trait": "archetype_trickster",
-    "group": "archetype",
-    "question": "Is your character a trickster archetype?"
-  },
-  {
-    "trait": "archetype_troublemaker",
-    "group": "archetype",
-    "question": "Is your character a troublemaker archetype?"
-  },
-  {
-    "trait": "archetype_unemployed",
-    "group": "archetype",
-    "question": "Is your character an unemployed archetype?"
-  },
-  {
-    "trait": "archetype_vigilante",
-    "group": "archetype",
-    "question": "Is your character a vigilante archetype?"
-  },
-  {
-    "trait": "archetype_villain",
-    "group": "archetype",
-    "question": "Is your character a villain archetype?"
-  },
-  {
-    "trait": "archetype_wanderer",
-    "group": "archetype",
-    "question": "Is your character a wanderer archetype?"
-  },
-  {
-    "trait": "archetype_warlord",
-    "group": "archetype",
-    "question": "Is your character a warlord archetype?"
-  },
-  {
-    "trait": "archetype_warrior",
-    "group": "archetype",
-    "question": "Is your character a warrior archetype?"
-  },
-  {
-    "trait": "archetype_waterbender",
-    "group": "archetype",
-    "question": "Is your character a waterbender archetype?"
-  },
-  {
-    "trait": "archetype_witcher",
-    "group": "archetype",
-    "question": "Is your character a witcher archetype?"
-  },
-  {
-    "trait": "archetype_wizard",
-    "group": "archetype",
-    "question": "Is your character a wizard archetype?"
-  },
-  {
-    "trait": "franchise_anime",
+    "trait": "franchise_avatar_tla",
     "group": "franchise",
-    "question": "Is your character from an anime?"
+    "question": "Is your character from Avatar: The Last Airbender?",
+    "priority": 1
   },
   {
-    "trait": "franchise_disney",
+    "trait": "franchise_breaking_bad",
     "group": "franchise",
-    "question": "Is your character from Disney?"
+    "question": "Is your character from Breaking Bad?",
+    "priority": 1
   },
   {
-    "trait": "franchise_franchise_aot",
+    "trait": "franchise_dc",
     "group": "franchise",
-    "question": "Is your character from \"Attack on Titan\"?"
+    "question": "Is your character from DC?",
+    "priority": 1
   },
   {
-    "trait": "franchise_franchise_avatar",
+    "trait": "franchise_demon_slayer",
     "group": "franchise",
-    "question": "Is your character from \"Avatar: The Last Airbender\"?"
+    "question": "Is your character from Demon Slayer?",
+    "priority": 1
   },
   {
-    "trait": "franchise_franchise_breaking_bad",
+    "trait": "franchise_dragon_ball",
     "group": "franchise",
-    "question": "Is your character from \"Breaking Bad\"?"
+    "question": "Is your character from Dragon Ball?",
+    "priority": 1
   },
   {
-    "trait": "franchise_franchise_dc",
+    "trait": "franchise_frozen",
     "group": "franchise",
-    "question": "Is your character from DC Comics?"
+    "question": "Is your character from Frozen?",
+    "priority": 1
   },
   {
-    "trait": "franchise_franchise_death_note",
+    "trait": "franchise_got",
     "group": "franchise",
-    "question": "Is your character from \"Death Note\"?"
+    "question": "Is your character from Game of Thrones?",
+    "priority": 1
   },
   {
-    "trait": "franchise_franchise_dragon_ball",
+    "trait": "franchise_halo",
     "group": "franchise",
-    "question": "Is your character from \"Dragon Ball\"?"
+    "question": "Is your character from Halo?",
+    "priority": 1
   },
   {
-    "trait": "franchise_franchise_frozen",
+    "trait": "franchise_harry_potter",
     "group": "franchise",
-    "question": "Is your character from \"Frozen\"?"
+    "question": "Is your character from Harry Potter?",
+    "priority": 1
   },
   {
-    "trait": "franchise_franchise_god_of_war",
+    "trait": "franchise_incredibles",
     "group": "franchise",
-    "question": "Is your character from \"God of War\"?"
+    "question": "Is your character from The Incredibles?",
+    "priority": 1
   },
   {
-    "trait": "franchise_franchise_got",
+    "trait": "franchise_lotr",
     "group": "franchise",
-    "question": "Is your character from \"Game of Thrones\"?"
+    "question": "Is your character from The Lord of the Rings?",
+    "priority": 1
   },
   {
-    "trait": "franchise_franchise_halo",
+    "trait": "franchise_mario",
     "group": "franchise",
-    "question": "Is your character from \"Halo\"?"
+    "question": "Is your character from Mario?",
+    "priority": 1
   },
   {
-    "trait": "franchise_franchise_harry_potter",
+    "trait": "franchise_marvel",
     "group": "franchise",
-    "question": "Is your character from \"Harry Potter\"?"
+    "question": "Is your character from Marvel?",
+    "priority": 1
   },
   {
-    "trait": "franchise_franchise_hunger_games",
+    "trait": "franchise_matrix",
     "group": "franchise",
-    "question": "Is your character from \"The Hunger Games\"?"
+    "question": "Is your character from The Matrix?",
+    "priority": 1
   },
   {
-    "trait": "franchise_franchise_indiana_jones",
+    "trait": "franchise_naruto",
     "group": "franchise",
-    "question": "Is your character from \"Indiana Jones\"?"
+    "question": "Is your character from Naruto?",
+    "priority": 1
   },
   {
-    "trait": "franchise_franchise_james_bond",
+    "trait": "franchise_one_piece",
     "group": "franchise",
-    "question": "Is your character from \"James Bond\"?"
+    "question": "Is your character from One Piece?",
+    "priority": 1
   },
   {
-    "trait": "franchise_franchise_lotr",
+    "trait": "franchise_pirates",
     "group": "franchise",
-    "question": "Is your character from \"The Lord of the Rings\"?"
+    "question": "Is your character from Pirates of the Caribbean?",
+    "priority": 1
   },
   {
-    "trait": "franchise_franchise_mario",
+    "trait": "franchise_pokemon",
     "group": "franchise",
-    "question": "Is your character from \"Mario\"?"
+    "question": "Is your character from Pok?mon?",
+    "priority": 1
   },
   {
-    "trait": "franchise_franchise_marvel",
+    "trait": "franchise_shrek",
     "group": "franchise",
-    "question": "Is your character from \"Marvel\"?"
+    "question": "Is your character from Shrek?",
+    "priority": 1
   },
   {
-    "trait": "franchise_franchise_naruto",
+    "trait": "franchise_sonic",
     "group": "franchise",
-    "question": "Is your character from \"Naruto\"?"
+    "question": "Is your character from Sonic?",
+    "priority": 1
   },
   {
-    "trait": "franchise_franchise_one_piece",
+    "trait": "franchise_star_wars",
     "group": "franchise",
-    "question": "Is your character from \"One Piece\"?"
+    "question": "Is your character from Star Wars?",
+    "priority": 1
   },
   {
-    "trait": "franchise_franchise_pokemon",
+    "trait": "franchise_stranger_things",
     "group": "franchise",
-    "question": "Is your character from \"Pokemon\"?"
+    "question": "Is your character from Stranger Things?",
+    "priority": 1
   },
   {
-    "trait": "franchise_franchise_sherlock",
+    "trait": "franchise_toy_story",
     "group": "franchise",
-    "question": "Is your character from \"Sherlock\"?"
+    "question": "Is your character from Toy Story?",
+    "priority": 1
   },
   {
-    "trait": "franchise_franchise_shrek",
+    "trait": "franchise_walking_dead",
     "group": "franchise",
-    "question": "Is your character from \"Shrek\"?"
+    "question": "Is your character from The Walking Dead?",
+    "priority": 1
   },
   {
-    "trait": "franchise_franchise_simpsons",
+    "trait": "franchise_witcher",
     "group": "franchise",
-    "question": "Is your character from \"The Simpsons\"?"
+    "question": "Is your character from The Witcher?",
+    "priority": 1
   },
   {
-    "trait": "franchise_franchise_sonic",
+    "trait": "franchise_zelda",
     "group": "franchise",
-    "question": "Is your character from \"Sonic\"?"
+    "question": "Is your character from The Legend of Zelda?",
+    "priority": 1
   },
   {
-    "trait": "franchise_franchise_spongebob",
-    "group": "franchise",
-    "question": "Is your character from \"SpongeBob\"?"
+    "trait": "source_anime",
+    "group": "source",
+    "question": "Is your character from an anime?",
+    "priority": 1
   },
   {
-    "trait": "franchise_franchise_star_wars",
-    "group": "franchise",
-    "question": "Is your character from \"Star Wars\"?"
+    "trait": "source_book",
+    "group": "source",
+    "question": "Is your character from a book or novel?",
+    "priority": 1
   },
   {
-    "trait": "franchise_franchise_stranger_things",
-    "group": "franchise",
-    "question": "Is your character from \"Stranger Things\"?"
+    "trait": "source_cartoon",
+    "group": "source",
+    "question": "Is your character from a cartoon?",
+    "priority": 1
   },
   {
-    "trait": "franchise_franchise_tlou",
-    "group": "franchise",
-    "question": "Is your character from \"The Last of Us\"?"
+    "trait": "source_comic",
+    "group": "source",
+    "question": "Is your character from a comic?",
+    "priority": 1
   },
   {
-    "trait": "franchise_franchise_tomb_raider",
-    "group": "franchise",
-    "question": "Is your character from Tomb Raider?"
+    "trait": "source_manga",
+    "group": "source",
+    "question": "Is your character from a manga?",
+    "priority": 1
   },
   {
-    "trait": "franchise_franchise_uncharted",
-    "group": "franchise",
-    "question": "Is your character from Uncharted?"
+    "trait": "source_movie",
+    "group": "source",
+    "question": "Is your character from a movie?",
+    "priority": 1
   },
   {
-    "trait": "franchise_franchise_walking_dead",
-    "group": "franchise",
-    "question": "Is your character from The Walking Dead?"
+    "trait": "source_tv_streaming",
+    "group": "source",
+    "question": "Is your character from a TV or streaming series?",
+    "priority": 1
   },
   {
-    "trait": "franchise_franchise_witcher",
-    "group": "franchise",
-    "question": "Is your character from The Witcher?"
+    "trait": "source_video_game",
+    "group": "source",
+    "question": "Is your character from a video game?",
+    "priority": 1
   },
   {
-    "trait": "franchise_franchise_zelda",
-    "group": "franchise",
-    "question": "Is your character from Zelda?"
+    "trait": "world_earth",
+    "group": "world",
+    "question": "Does your character live on Earth?",
+    "priority": 2
   },
   {
-    "trait": "franchise_movie",
-    "group": "franchise",
-    "question": "Is your character from a movie?"
+    "trait": "world_fictional_realm",
+    "group": "world",
+    "question": "Is your character from a fictional realm?",
+    "priority": 2
   },
   {
-    "trait": "franchise_nintendo",
-    "group": "franchise",
-    "question": "Is your character from Nintendo?"
+    "trait": "world_game_universe",
+    "group": "world",
+    "question": "Is your character from a video game universe?",
+    "priority": 2
   },
   {
-    "trait": "franchise_tv_show",
-    "group": "franchise",
-    "question": "Is your character from a TV show?"
+    "trait": "world_space",
+    "group": "world",
+    "question": "Does your character come from outer space?",
+    "priority": 2
   },
   {
-    "trait": "franchise_video_game",
-    "group": "franchise",
-    "question": "Is your character from a video game?"
+    "trait": "origin_setting_fantasy",
+    "group": "setting",
+    "question": "Is your character from a fantasy setting?",
+    "priority": 3
   },
   {
-    "trait": "identity_age_adult",
+    "trait": "origin_setting_historical",
+    "group": "setting",
+    "question": "Is your character from a historical setting?",
+    "priority": 3
+  },
+  {
+    "trait": "origin_setting_modern",
+    "group": "setting",
+    "question": "Is your character in a modern-day setting?",
+    "priority": 3
+  },
+  {
+    "trait": "origin_setting_post_apocalyptic",
+    "group": "setting",
+    "question": "Is your character from a post-apocalyptic world?",
+    "priority": 3
+  },
+  {
+    "trait": "origin_setting_scifi",
+    "group": "setting",
+    "question": "Is your character from a sci-fi setting?",
+    "priority": 3
+  },
+  {
+    "trait": "identity_animal",
     "group": "identity",
-    "question": "Is your character an adult?"
+    "question": "Is your character an animal?",
+    "priority": 4
   },
   {
-    "trait": "identity_age_old",
+    "trait": "identity_deity_or_godlike",
     "group": "identity",
-    "question": "Is your character old?"
+    "question": "Is your character godlike or a deity?",
+    "priority": 4
   },
   {
-    "trait": "identity_age_young",
+    "trait": "identity_enhanced_human",
     "group": "identity",
-    "question": "Is your character young?"
+    "question": "Is your character an enhanced or augmented human?",
+    "priority": 4
   },
   {
-    "trait": "identity_alignment_evil",
+    "trait": "identity_human",
     "group": "identity",
-    "question": "Is your character generally evil?"
+    "question": "Is your character human?",
+    "priority": 4
   },
   {
-    "trait": "identity_alignment_good",
+    "trait": "identity_nonhuman_creature",
     "group": "identity",
-    "question": "Is your character generally good?"
+    "question": "Is your character a nonhuman creature?",
+    "priority": 4
   },
   {
-    "trait": "identity_alignment_neutral",
-    "group": "identity",
-    "question": "Is your character generally neutral?"
+    "trait": "origin_cursed",
+    "group": "origin",
+    "question": "Is your character cursed?",
+    "priority": 4
   },
   {
-    "trait": "identity_gender_f",
-    "group": "identity",
-    "question": "Is your character female?"
+    "trait": "origin_noble_birth",
+    "group": "origin",
+    "question": "Was your character born of noble lineage?",
+    "priority": 4
   },
   {
-    "trait": "identity_gender_m",
-    "group": "identity",
-    "question": "Is your character male?"
+    "trait": "origin_orphan",
+    "group": "origin",
+    "question": "Is your character an orphan?",
+    "priority": 4
   },
   {
-    "trait": "identity_gender_neutral",
-    "group": "identity",
-    "question": "Does your character identify as neutral?"
+    "trait": "origin_scientific_experiment",
+    "group": "origin",
+    "question": "Was your character created or changed by a scientific experiment?",
+    "priority": 4
   },
   {
-    "trait": "identity_origin_earth",
-    "group": "identity",
-    "question": "Does your character originate from Earth?"
+    "trait": "origin_tragic_past",
+    "group": "origin",
+    "question": "Does your character have a tragic past?",
+    "priority": 4
   },
   {
-    "trait": "identity_origin_fantasy",
-    "group": "identity",
-    "question": "Does your character originate from fantasy?"
+    "trait": "affiliation_clan_or_org",
+    "group": "affiliation",
+    "question": "Is your character tied to a notable clan or organization?",
+    "priority": 5
   },
   {
-    "trait": "identity_origin_space",
-    "group": "identity",
-    "question": "Does your character originate from space?"
+    "trait": "affiliation_criminal_underworld",
+    "group": "affiliation",
+    "question": "Is your character linked to the criminal underworld?",
+    "priority": 5
   },
   {
-    "trait": "identity_species_ai",
-    "group": "identity",
-    "question": "Is your character an AI?"
+    "trait": "affiliation_government_agent",
+    "group": "affiliation",
+    "question": "Is your character a government agent?",
+    "priority": 5
   },
   {
-    "trait": "identity_species_demigod",
-    "group": "identity",
-    "question": "Is your character a demigod?"
+    "trait": "affiliation_magic_guild_school",
+    "group": "affiliation",
+    "question": "Is your character part of a magic guild or school?",
+    "priority": 5
   },
   {
-    "trait": "identity_species_donkey",
-    "group": "identity",
-    "question": "Is your character a donkey?"
+    "trait": "affiliation_military_unit",
+    "group": "affiliation",
+    "question": "Is your character part of a military unit?",
+    "priority": 5
   },
   {
-    "trait": "identity_species_elf",
-    "group": "identity",
-    "question": "Is your character an elf?"
+    "trait": "affiliation_pirate_crew",
+    "group": "affiliation",
+    "question": "Is your character part of a pirate crew?",
+    "priority": 5
   },
   {
-    "trait": "identity_species_gerudo",
-    "group": "identity",
-    "question": "Is your character a Gerudo?"
+    "trait": "affiliation_rebel_resistance",
+    "group": "affiliation",
+    "question": "Is your character part of a rebel or resistance group?",
+    "priority": 5
   },
   {
-    "trait": "identity_species_god",
-    "group": "identity",
-    "question": "Is your character a god?"
+    "trait": "affiliation_school_team",
+    "group": "affiliation",
+    "question": "Is your character part of a school team?",
+    "priority": 5
   },
   {
-    "trait": "identity_species_hedgehog",
-    "group": "identity",
-    "question": "Is your character a hedgehog?"
+    "trait": "affiliation_space_fleet",
+    "group": "affiliation",
+    "question": "Is your character part of a space fleet?",
+    "priority": 5
   },
   {
-    "trait": "identity_species_hobbit",
-    "group": "identity",
-    "question": "Is your character a hobbit?"
+    "trait": "affiliation_superhero_team",
+    "group": "affiliation",
+    "question": "Is your character part of a superhero team?",
+    "priority": 5
   },
   {
-    "trait": "identity_species_human",
-    "group": "identity",
-    "question": "Is your character a human?"
+    "trait": "affiliation_villain_org",
+    "group": "affiliation",
+    "question": "Is your character part of a villainous organization?",
+    "priority": 5
   },
   {
-    "trait": "identity_species_hylian",
-    "group": "identity",
-    "question": "Is your character a Hylian?"
-  },
-  {
-    "trait": "identity_species_koopa",
-    "group": "identity",
-    "question": "Is your character a Koopa?"
-  },
-  {
-    "trait": "identity_species_kryptonian",
-    "group": "identity",
-    "question": "Is your character a Kryptonian?"
-  },
-  {
-    "trait": "identity_species_monster",
-    "group": "identity",
-    "question": "Is your character a monster?"
-  },
-  {
-    "trait": "identity_species_namekian",
-    "group": "identity",
-    "question": "Is your character a Namekian?"
-  },
-  {
-    "trait": "identity_species_octopus",
-    "group": "identity",
-    "question": "Is your character an octopus?"
-  },
-  {
-    "trait": "identity_species_ogre",
-    "group": "identity",
-    "question": "Is your character an ogre?"
-  },
-  {
-    "trait": "identity_species_pokemon",
-    "group": "identity",
-    "question": "Is your character a Pok\u00e9mon?"
-  },
-  {
-    "trait": "identity_species_saiyan",
-    "group": "identity",
-    "question": "Is your character a Saiyan?"
-  },
-  {
-    "trait": "identity_species_snowman",
-    "group": "identity",
-    "question": "Is your character a snowman?"
-  },
-  {
-    "trait": "identity_species_sponge",
-    "group": "identity",
-    "question": "Is your character a sponge?"
-  },
-  {
-    "trait": "identity_species_starfish",
-    "group": "identity",
-    "question": "Is your character a starfish?"
-  },
-  {
-    "trait": "identity_species_titan",
-    "group": "identity",
-    "question": "Is your character a titan?"
-  },
-  {
-    "trait": "identity_species_witcher",
-    "group": "identity",
-    "question": "Is your character a witcher?"
-  },
-  {
-    "trait": "identity_species_wizard",
-    "group": "identity",
-    "question": "Is your character a wizard?"
-  },
-  {
-    "trait": "personality_adventurous",
-    "group": "personality",
-    "question": "Is your character adventurous?"
-  },
-  {
-    "trait": "personality_ambitious",
-    "group": "personality",
-    "question": "Is your character ambitious?"
-  },
-  {
-    "trait": "personality_angry",
-    "group": "personality",
-    "question": "Is your character angry?"
-  },
-  {
-    "trait": "personality_antisocial",
-    "group": "personality",
-    "question": "Is your character antisocial?"
-  },
-  {
-    "trait": "personality_anxious",
-    "group": "personality",
-    "question": "Is your character anxious?"
-  },
-  {
-    "trait": "personality_arrogant",
-    "group": "personality",
-    "question": "Is your character arrogant?"
-  },
-  {
-    "trait": "personality_artistic",
-    "group": "personality",
-    "question": "Is your character artistic?"
-  },
-  {
-    "trait": "personality_battle_loving",
-    "group": "personality",
-    "question": "Is your character battle-loving?"
-  },
-  {
-    "trait": "personality_brave",
-    "group": "personality",
-    "question": "Is your character brave?"
-  },
-  {
-    "trait": "personality_brooding",
-    "group": "personality",
-    "question": "Is your character brooding?"
-  },
-  {
-    "trait": "personality_burdened",
-    "group": "personality",
-    "question": "Is your character burdened?"
-  },
-  {
-    "trait": "personality_calculating",
-    "group": "personality",
-    "question": "Is your character calculating?"
-  },
-  {
-    "trait": "personality_calm",
-    "group": "personality",
-    "question": "Is your character calm?"
-  },
-  {
-    "trait": "personality_carefree",
-    "group": "personality",
-    "question": "Is your character carefree?"
-  },
-  {
-    "trait": "personality_caring",
-    "group": "personality",
-    "question": "Is your character caring?"
-  },
-  {
-    "trait": "personality_chaotic",
-    "group": "personality",
-    "question": "Is your character chaotic?"
-  },
-  {
-    "trait": "personality_charismatic",
-    "group": "personality",
-    "question": "Is your character charismatic?"
-  },
-  {
-    "trait": "personality_charming",
-    "group": "personality",
-    "question": "Is your character charming?"
-  },
-  {
-    "trait": "personality_cheerful",
-    "group": "personality",
-    "question": "Is your character cheerful?"
-  },
-  {
-    "trait": "personality_chivalrous",
-    "group": "personality",
-    "question": "Is your character chivalrous?"
-  },
-  {
-    "trait": "personality_clean_freak",
-    "group": "personality",
-    "question": "Is your character a clean freak?"
-  },
-  {
-    "trait": "personality_clever",
-    "group": "personality",
-    "question": "Is your character clever?"
-  },
-  {
-    "trait": "personality_cocky",
-    "group": "personality",
-    "question": "Is your character cocky?"
-  },
-  {
-    "trait": "personality_cold",
-    "group": "personality",
-    "question": "Is your character cold?"
-  },
-  {
-    "trait": "personality_comedic",
-    "group": "personality",
-    "question": "Is your character comedic?"
-  },
-  {
-    "trait": "personality_compassionate",
-    "group": "personality",
-    "question": "Is your character compassionate?"
-  },
-  {
-    "trait": "personality_competitive",
-    "group": "personality",
-    "question": "Is your character competitive?"
-  },
-  {
-    "trait": "personality_complex",
-    "group": "personality",
-    "question": "Is your character complex?"
-  },
-  {
-    "trait": "personality_confident",
-    "group": "personality",
-    "question": "Is your character confident?"
-  },
-  {
-    "trait": "personality_conflicted",
-    "group": "personality",
-    "question": "Is your character conflicted?"
-  },
-  {
-    "trait": "personality_cowardly",
-    "group": "personality",
-    "question": "Is your character cowardly?"
-  },
-  {
-    "trait": "personality_cruel",
-    "group": "personality",
-    "question": "Is your character cruel?"
-  },
-  {
-    "trait": "personality_cunning",
-    "group": "personality",
-    "question": "Is your character cunning?"
-  },
-  {
-    "trait": "personality_curious",
-    "group": "personality",
-    "question": "Is your character curious?"
-  },
-  {
-    "trait": "personality_cute",
-    "group": "personality",
-    "question": "Is your character cute?"
-  },
-  {
-    "trait": "personality_cynical",
-    "group": "personality",
-    "question": "Is your character cynical?"
-  },
-  {
-    "trait": "personality_determined",
-    "group": "personality",
-    "question": "Is your character determined?"
-  },
-  {
-    "trait": "personality_directionally_challenged",
-    "group": "personality",
-    "question": "Is your character directionally challenged?"
-  },
-  {
-    "trait": "personality_dumb",
-    "group": "personality",
-    "question": "Is your character dumb?"
-  },
-  {
-    "trait": "personality_eccentric",
-    "group": "personality",
-    "question": "Is your character eccentric?"
-  },
-  {
-    "trait": "personality_elegant",
-    "group": "personality",
-    "question": "Is your character elegant?"
-  },
-  {
-    "trait": "personality_emotional",
-    "group": "personality",
-    "question": "Is your character emotional?"
-  },
-  {
-    "trait": "personality_energetic",
-    "group": "personality",
-    "question": "Is your character energetic?"
-  },
-  {
-    "trait": "personality_evil",
-    "group": "personality",
-    "question": "Is your character evil?"
-  },
-  {
-    "trait": "personality_fast",
-    "group": "personality",
-    "question": "Is your character fast?"
-  },
-  {
-    "trait": "personality_fearful",
-    "group": "personality",
-    "question": "Is your character fearful?"
-  },
-  {
-    "trait": "personality_foolish",
-    "group": "personality",
-    "question": "Is your character foolish?"
-  },
-  {
-    "trait": "personality_fun_loving",
-    "group": "personality",
-    "question": "Is your character fun-loving?"
-  },
-  {
-    "trait": "personality_funny",
-    "group": "personality",
-    "question": "Is your character funny?"
-  },
-  {
-    "trait": "personality_gentle",
-    "group": "personality",
-    "question": "Is your character gentle?"
-  },
-  {
-    "trait": "personality_greedy",
-    "group": "personality",
-    "question": "Is your character greedy?"
-  },
-  {
-    "trait": "personality_grumpy",
-    "group": "personality",
-    "question": "Is your character grumpy?"
-  },
-  {
-    "trait": "personality_hardworking",
-    "group": "personality",
-    "question": "Is your character hardworking?"
-  },
-  {
-    "trait": "personality_heroic",
-    "group": "personality",
-    "question": "Is your character heroic?"
-  },
-  {
-    "trait": "personality_honorable",
-    "group": "personality",
-    "question": "Is your character honorable?"
-  },
-  {
-    "trait": "personality_humble",
-    "group": "personality",
-    "question": "Is your character humble?"
-  },
-  {
-    "trait": "personality_impulsive",
-    "group": "personality",
-    "question": "Is your character impulsive?"
-  },
-  {
-    "trait": "personality_independent",
-    "group": "personality",
-    "question": "Is your character independent?"
-  },
-  {
-    "trait": "personality_innocent",
-    "group": "personality",
-    "question": "Is your character innocent?"
-  },
-  {
-    "trait": "personality_insane",
-    "group": "personality",
-    "question": "Is your character insane?"
-  },
-  {
-    "trait": "personality_insecure",
-    "group": "personality",
-    "question": "Is your character insecure?"
-  },
-  {
-    "trait": "personality_intelligent",
-    "group": "personality",
-    "question": "Is your character intelligent?"
-  },
-  {
-    "trait": "personality_intimidating",
-    "group": "personality",
-    "question": "Is your character intimidating?"
-  },
-  {
-    "trait": "personality_isolated",
-    "group": "personality",
-    "question": "Is your character isolated?"
-  },
-  {
-    "trait": "personality_jealous",
-    "group": "personality",
-    "question": "Is your character jealous?"
-  },
-  {
-    "trait": "personality_kind",
-    "group": "personality",
-    "question": "Is your character kind?"
-  },
-  {
-    "trait": "personality_kind_hearted",
-    "group": "personality",
-    "question": "Is your character kind-hearted?"
-  },
-  {
-    "trait": "personality_lazy",
-    "group": "personality",
-    "question": "Is your character lazy?"
-  },
-  {
-    "trait": "personality_logical",
-    "group": "personality",
-    "question": "Is your character logical?"
-  },
-  {
-    "trait": "personality_loving",
-    "group": "personality",
-    "question": "Is your character loving?"
-  },
-  {
-    "trait": "personality_loyal",
-    "group": "personality",
-    "question": "Is your character loyal?"
-  },
-  {
-    "trait": "personality_manipulative",
-    "group": "personality",
-    "question": "Is your character manipulative?"
-  },
-  {
-    "trait": "personality_mature",
-    "group": "personality",
-    "question": "Is your character mature?"
-  },
-  {
-    "trait": "personality_mischievous",
-    "group": "personality",
-    "question": "Is your character mischievous?"
-  },
-  {
-    "trait": "personality_miserable",
-    "group": "personality",
-    "question": "Is your character miserable?"
-  },
-  {
-    "trait": "personality_misunderstood",
-    "group": "personality",
-    "question": "Is your character misunderstood?"
-  },
-  {
-    "trait": "personality_moral",
-    "group": "personality",
-    "question": "Is your character moral?"
-  },
-  {
-    "trait": "personality_motherly",
-    "group": "personality",
-    "question": "Is your character motherly?"
-  },
-  {
-    "trait": "personality_mysterious",
-    "group": "personality",
-    "question": "Is your character mysterious?"
-  },
-  {
-    "trait": "personality_naive",
-    "group": "personality",
-    "question": "Is your character naive?"
-  },
-  {
-    "trait": "personality_noble",
-    "group": "personality",
-    "question": "Is your character noble?"
-  },
-  {
-    "trait": "personality_observant",
-    "group": "personality",
-    "question": "Is your character observant?"
-  },
-  {
-    "trait": "personality_obsessive",
-    "group": "personality",
-    "question": "Is your character obsessive?"
-  },
-  {
-    "trait": "personality_optimistic",
-    "group": "personality",
-    "question": "Is your character optimistic?"
-  },
-  {
-    "trait": "personality_passionate",
-    "group": "personality",
-    "question": "Is your character passionate?"
-  },
-  {
-    "trait": "personality_peaceful",
-    "group": "personality",
-    "question": "Is your character peaceful?"
-  },
-  {
-    "trait": "personality_perfectionist",
-    "group": "personality",
-    "question": "Is your character a perfectionist?"
-  },
-  {
-    "trait": "personality_persistent",
-    "group": "personality",
-    "question": "Is your character persistent?"
-  },
-  {
-    "trait": "personality_philosophical",
-    "group": "personality",
-    "question": "Is your character philosophical?"
-  },
-  {
-    "trait": "personality_powerful",
-    "group": "personality",
-    "question": "Is your character powerful?"
-  },
-  {
-    "trait": "personality_practical",
-    "group": "personality",
-    "question": "Is your character practical?"
-  },
-  {
-    "trait": "personality_prideful",
-    "group": "personality",
-    "question": "Is your character prideful?"
-  },
-  {
-    "trait": "personality_protective",
-    "group": "personality",
-    "question": "Is your character protective?"
-  },
-  {
-    "trait": "personality_proud",
-    "group": "personality",
-    "question": "Is your character proud?"
-  },
-  {
-    "trait": "personality_rebellious",
-    "group": "personality",
-    "question": "Is your character rebellious?"
-  },
-  {
-    "trait": "personality_responsible",
-    "group": "personality",
-    "question": "Is your character responsible?"
-  },
-  {
-    "trait": "personality_romantic",
-    "group": "personality",
-    "question": "Is your character romantic?"
-  },
-  {
-    "trait": "personality_ruthless",
-    "group": "personality",
-    "question": "Is your character ruthless?"
-  },
-  {
-    "trait": "personality_sadistic",
-    "group": "personality",
-    "question": "Is your character sadistic?"
-  },
-  {
-    "trait": "personality_sarcastic",
-    "group": "personality",
-    "question": "Is your character sarcastic?"
-  },
-  {
-    "trait": "personality_secretive",
-    "group": "personality",
-    "question": "Is your character secretive?"
-  },
-  {
-    "trait": "personality_selfless",
-    "group": "personality",
-    "question": "Is your character selfless?"
-  },
-  {
-    "trait": "personality_serious",
-    "group": "personality",
-    "question": "Is your character serious?"
-  },
-  {
-    "trait": "personality_silent",
-    "group": "personality",
-    "question": "Is your character silent?"
-  },
-  {
-    "trait": "personality_simple_minded",
-    "group": "personality",
-    "question": "Is your character simple-minded?"
-  },
-  {
-    "trait": "personality_skilled",
-    "group": "personality",
-    "question": "Is your character skilled?"
-  },
-  {
-    "trait": "personality_stoic",
-    "group": "personality",
-    "question": "Is your character stoic?"
-  },
-  {
-    "trait": "personality_strategic",
-    "group": "personality",
-    "question": "Is your character strategic?"
-  },
-  {
-    "trait": "personality_strong",
-    "group": "personality",
-    "question": "Is your character strong?"
-  },
-  {
-    "trait": "personality_strong_willed",
-    "group": "personality",
-    "question": "Is your character strong-willed?"
-  },
-  {
-    "trait": "personality_stubborn",
-    "group": "personality",
-    "question": "Is your character stubborn?"
-  },
-  {
-    "trait": "personality_suave",
-    "group": "personality",
-    "question": "Is your character suave?"
-  },
-  {
-    "trait": "personality_talented",
-    "group": "personality",
-    "question": "Is your character talented?"
-  },
-  {
-    "trait": "personality_talkative",
-    "group": "personality",
-    "question": "Is your character talkative?"
-  },
-  {
-    "trait": "personality_timid",
-    "group": "personality",
-    "question": "Is your character timid?"
-  },
-  {
-    "trait": "personality_tragic",
-    "group": "personality",
-    "question": "Is your character tragic?"
-  },
-  {
-    "trait": "personality_traumatized",
-    "group": "personality",
-    "question": "Is your character traumatized?"
-  },
-  {
-    "trait": "personality_troublemaker",
-    "group": "personality",
-    "question": "Is your character a troublemaker?"
-  },
-  {
-    "trait": "personality_unpredictable",
-    "group": "personality",
-    "question": "Is your character unpredictable?"
-  },
-  {
-    "trait": "personality_vengeful",
-    "group": "personality",
-    "question": "Is your character vengeful?"
-  },
-  {
-    "trait": "personality_wise",
-    "group": "personality",
-    "question": "Is your character wise?"
-  },
-  {
-    "trait": "personality_witty",
-    "group": "personality",
-    "question": "Is your character witty?"
-  },
-  {
-    "trait": "role_adventurer",
+    "trait": "role_antihero",
     "group": "role",
-    "question": "Does your character play the role of an adventurer?"
-  },
-  {
-    "trait": "role_advisor",
-    "group": "role",
-    "question": "Does your character play the role of an advisor?"
-  },
-  {
-    "trait": "role_ai_companion",
-    "group": "role",
-    "question": "Does your character play the role of an AI companion?"
-  },
-  {
-    "trait": "role_antagonist",
-    "group": "role",
-    "question": "Is your character an antagonist?"
-  },
-  {
-    "trait": "role_anti_hero",
-    "group": "role",
-    "question": "Is your character an anti-hero?"
-  },
-  {
-    "trait": "role_assassin",
-    "group": "role",
-    "question": "Is your character an assassin?"
-  },
-  {
-    "trait": "role_avatar",
-    "group": "role",
-    "question": "Is your character an avatar?"
-  },
-  {
-    "trait": "role_avenger",
-    "group": "role",
-    "question": "Is your character an Avenger?"
-  },
-  {
-    "trait": "role_best_friend",
-    "group": "role",
-    "question": "Is your character a best friend?"
-  },
-  {
-    "trait": "role_captain",
-    "group": "role",
-    "question": "Is your character a captain?"
-  },
-  {
-    "trait": "role_chaos_agent",
-    "group": "role",
-    "question": "Is your character a chaos agent?"
+    "question": "Is your character an anti-hero?",
+    "priority": 5
   },
   {
     "trait": "role_chosen_one",
     "group": "role",
-    "question": "Is your character a chosen one?"
-  },
-  {
-    "trait": "role_comedic_character",
-    "group": "role",
-    "question": "Is your character a comedic character?"
-  },
-  {
-    "trait": "role_comedic_relief",
-    "group": "role",
-    "question": "Is your character a comedic relief?"
-  },
-  {
-    "trait": "role_comic_relief",
-    "group": "role",
-    "question": "Is your character a comic relief?"
-  },
-  {
-    "trait": "role_cook",
-    "group": "role",
-    "question": "Is your character a cook?"
-  },
-  {
-    "trait": "role_damsel",
-    "group": "role",
-    "question": "Is your character a damsel?"
-  },
-  {
-    "trait": "role_daughter",
-    "group": "role",
-    "question": "Is your character a daughter?"
-  },
-  {
-    "trait": "role_detective",
-    "group": "role",
-    "question": "Is your character a detective?"
-  },
-  {
-    "trait": "role_deuteragonist",
-    "group": "role",
-    "question": "Is your character a deuteragonist?"
-  },
-  {
-    "trait": "role_father",
-    "group": "role",
-    "question": "Is your character a father?"
-  },
-  {
-    "trait": "role_friendly_neighborhood",
-    "group": "role",
-    "question": "Is your character from a friendly neighborhood?"
-  },
-  {
-    "trait": "role_genius",
-    "group": "role",
-    "question": "Is your character a genius?"
-  },
-  {
-    "trait": "role_guide",
-    "group": "role",
-    "question": "Is your character a guide?"
-  },
-  {
-    "trait": "role_healer",
-    "group": "role",
-    "question": "Is your character a healer?"
+    "question": "Is your character a chosen one?",
+    "priority": 5
   },
   {
     "trait": "role_hero",
     "group": "role",
-    "question": "Is your character a hero?"
-  },
-  {
-    "trait": "role_icon",
-    "group": "role",
-    "question": "Is your character an icon?"
-  },
-  {
-    "trait": "role_lawyer",
-    "group": "role",
-    "question": "Is your character a lawyer?"
+    "question": "Is your character a hero?",
+    "priority": 5
   },
   {
     "trait": "role_leader",
     "group": "role",
-    "question": "Is your character a leader?"
+    "question": "Is your character a leader?",
+    "priority": 5
   },
   {
-    "trait": "role_love_interest",
+    "trait": "role_loner",
     "group": "role",
-    "question": "Is your character a love interest?"
+    "question": "Is your character a lone wolf?",
+    "priority": 5
   },
   {
     "trait": "role_main_character",
     "group": "role",
-    "question": "Is your character a main character?"
-  },
-  {
-    "trait": "role_main_villain",
-    "group": "role",
-    "question": "Is your character a main villain?"
-  },
-  {
-    "trait": "role_mascot",
-    "group": "role",
-    "question": "Is your character a mascot?"
-  },
-  {
-    "trait": "role_medical",
-    "group": "role",
-    "question": "Is your character a medical professional?"
+    "question": "Is your character the main character?",
+    "priority": 5
   },
   {
     "trait": "role_mentor",
     "group": "role",
-    "question": "Is your character a mentor?"
+    "question": "Is your character a mentor?",
+    "priority": 5
   },
   {
-    "trait": "role_misunderstood",
+    "trait": "role_mentor_sensei",
     "group": "role",
-    "question": "Is your character often misunderstood?"
+    "question": "Is your character a mentor or sensei?",
+    "priority": 5
   },
   {
-    "trait": "role_monster",
+    "trait": "role_outlaw",
     "group": "role",
-    "question": "Is your character a monster?"
+    "question": "Is your character an outlaw?",
+    "priority": 5
   },
   {
-    "trait": "role_monster_hunter",
+    "trait": "role_parental_figure",
     "group": "role",
-    "question": "Is your character a monster hunter?"
+    "question": "Is your character a parental figure?",
+    "priority": 5
   },
   {
-    "trait": "role_narrator",
+    "trait": "role_rival_protagonist",
     "group": "role",
-    "question": "Is your character a narrator?"
+    "question": "Is your character the main rival of the protagonist?",
+    "priority": 5
   },
   {
-    "trait": "role_navigator",
+    "trait": "role_royalty_noble",
     "group": "role",
-    "question": "Is your character a navigator?"
-  },
-  {
-    "trait": "role_neighbor",
-    "group": "role",
-    "question": "Is your character a neighbor?"
-  },
-  {
-    "trait": "role_optimist",
-    "group": "role",
-    "question": "Is your character an optimist?"
-  },
-  {
-    "trait": "role_partner",
-    "group": "role",
-    "question": "Is your character a partner?"
-  },
-  {
-    "trait": "role_powerful_ally",
-    "group": "role",
-    "question": "Is your character a powerful ally?"
-  },
-  {
-    "trait": "role_protector",
-    "group": "role",
-    "question": "Is your character a protector?"
-  },
-  {
-    "trait": "role_rebel",
-    "group": "role",
-    "question": "Is your character a rebel?"
-  },
-  {
-    "trait": "role_recurring_villain",
-    "group": "role",
-    "question": "Is your character a recurring villain?"
-  },
-  {
-    "trait": "role_right_hand",
-    "group": "role",
-    "question": "Is your character a right hand?"
-  },
-  {
-    "trait": "role_rival",
-    "group": "role",
-    "question": "Is your character a rival?"
-  },
-  {
-    "trait": "role_rogue",
-    "group": "role",
-    "question": "Is your character a rogue?"
-  },
-  {
-    "trait": "role_royalty",
-    "group": "role",
-    "question": "Is your character royalty?"
-  },
-  {
-    "trait": "role_sidekick",
-    "group": "role",
-    "question": "Is your character a sidekick?"
-  },
-  {
-    "trait": "role_soldier",
-    "group": "role",
-    "question": "Is your character a soldier?"
-  },
-  {
-    "trait": "role_son",
-    "group": "role",
-    "question": "Is your character a son in their role?"
-  },
-  {
-    "trait": "role_spy",
-    "group": "role",
-    "question": "Is your character a spy in their role?"
-  },
-  {
-    "trait": "role_strategist",
-    "group": "role",
-    "question": "Is your character a strategist in their role?"
-  },
-  {
-    "trait": "role_strongest_soldier",
-    "group": "role",
-    "question": "Is your character the strongest soldier in their role?"
+    "question": "Is your character royalty or of noble birth?",
+    "priority": 5
   },
   {
     "trait": "role_support",
     "group": "role",
-    "question": "Is your character a support in their role?"
+    "question": "Is your character a supporting character?",
+    "priority": 5
   },
   {
-    "trait": "role_survivor",
+    "trait": "role_tactician",
     "group": "role",
-    "question": "Is your character a survivor in their role?"
-  },
-  {
-    "trait": "role_teacher",
-    "group": "role",
-    "question": "Is your character a teacher in their role?"
-  },
-  {
-    "trait": "role_tragic",
-    "group": "role",
-    "question": "Is your character tragic in their role?"
-  },
-  {
-    "trait": "role_trainer",
-    "group": "role",
-    "question": "Is your character a trainer in their role?"
-  },
-  {
-    "trait": "role_treasure_hunter",
-    "group": "role",
-    "question": "Is your character a treasure hunter in their role?"
-  },
-  {
-    "trait": "role_trickster",
-    "group": "role",
-    "question": "Is your character a trickster?"
-  },
-  {
-    "trait": "role_troublemaker",
-    "group": "role",
-    "question": "Is your character a troublemaker?"
-  },
-  {
-    "trait": "role_underdog",
-    "group": "role",
-    "question": "Is your character an underdog?"
-  },
-  {
-    "trait": "role_victim",
-    "group": "role",
-    "question": "Is your character a victim?"
-  },
-  {
-    "trait": "role_vigilante",
-    "group": "role",
-    "question": "Is your character a vigilante?"
+    "question": "Is your character known as a tactician?",
+    "priority": 5
   },
   {
     "trait": "role_villain",
     "group": "role",
-    "question": "Is your character a villain?"
+    "question": "Is your character a villain?",
+    "priority": 5
   },
   {
-    "trait": "role_voice_of_reason",
-    "group": "role",
-    "question": "Is your character a voice of reason?"
+    "trait": "profession_assassin",
+    "group": "profession",
+    "question": "Is your character an assassin?",
+    "priority": 6
   },
   {
-    "trait": "role_warrior",
-    "group": "role",
-    "question": "Is your character a warrior?"
+    "trait": "profession_bartender_merchant",
+    "group": "profession",
+    "question": "Is your character a merchant or trader?",
+    "priority": 6
   },
   {
-    "trait": "role_wise",
-    "group": "role",
-    "question": "Is your character wise?"
+    "trait": "profession_bounty_hunter",
+    "group": "profession",
+    "question": "Is your character a bounty hunter?",
+    "priority": 6
   },
   {
-    "trait": "role_wit",
-    "group": "role",
-    "question": "Is your character witty?"
+    "trait": "profession_detective",
+    "group": "profession",
+    "question": "Is your character a detective?",
+    "priority": 6
   },
   {
-    "trait": "abilities_political_power",
+    "trait": "profession_doctor_healer",
+    "group": "profession",
+    "question": "Is your character a doctor or healer?",
+    "priority": 6
+  },
+  {
+    "trait": "profession_engineer_inventor",
+    "group": "profession",
+    "question": "Is your character an engineer or inventor?",
+    "priority": 6
+  },
+  {
+    "trait": "profession_ninja",
+    "group": "profession",
+    "question": "Is your character a ninja?",
+    "priority": 6
+  },
+  {
+    "trait": "profession_pilot",
+    "group": "profession",
+    "question": "Is your character a pilot?",
+    "priority": 6
+  },
+  {
+    "trait": "profession_pirate",
+    "group": "profession",
+    "question": "Is your character a pirate?",
+    "priority": 6
+  },
+  {
+    "trait": "profession_scholar",
+    "group": "profession",
+    "question": "Is your character a scholar?",
+    "priority": 6
+  },
+  {
+    "trait": "profession_scientist",
+    "group": "profession",
+    "question": "Is your character a scientist?",
+    "priority": 6
+  },
+  {
+    "trait": "profession_smuggler",
+    "group": "profession",
+    "question": "Is your character a smuggler?",
+    "priority": 6
+  },
+  {
+    "trait": "profession_soldier",
+    "group": "profession",
+    "question": "Is your character a soldier?",
+    "priority": 6
+  },
+  {
+    "trait": "profession_spy",
+    "group": "profession",
+    "question": "Is your character a spy?",
+    "priority": 6
+  },
+  {
+    "trait": "ability_air_style",
     "group": "abilities",
-    "question": "Does your character have political power?"
+    "question": "Does your character primarily use air or wind techniques?",
+    "priority": 7
   },
   {
-    "trait": "abilities_poisoner",
+    "trait": "ability_animal_companion",
     "group": "abilities",
-    "question": "Does your character use poison?"
+    "question": "Does your character fight with an animal companion?",
+    "priority": 7
   },
   {
-    "trait": "appearance_wears_white_rose",
+    "trait": "ability_archer",
+    "group": "abilities",
+    "question": "Is your character an archer?",
+    "priority": 7
+  },
+  {
+    "trait": "ability_berserker_mode",
+    "group": "abilities",
+    "question": "Does your character have a berserker mode?",
+    "priority": 7
+  },
+  {
+    "trait": "ability_brawler",
+    "group": "abilities",
+    "question": "Is your character a hand-to-hand brawler?",
+    "priority": 7
+  },
+  {
+    "trait": "ability_dual_wield",
+    "group": "abilities",
+    "question": "Does your character fight with two weapons?",
+    "priority": 7
+  },
+  {
+    "trait": "ability_earth_style",
+    "group": "abilities",
+    "question": "Does your character primarily use earth techniques?",
+    "priority": 7
+  },
+  {
+    "trait": "ability_elemental",
+    "group": "abilities",
+    "question": "Can your character control elements?",
+    "priority": 7
+  },
+  {
+    "trait": "ability_energy_blast",
+    "group": "abilities",
+    "question": "Can your character fire energy blasts?",
+    "priority": 7
+  },
+  {
+    "trait": "ability_engineering",
+    "group": "abilities",
+    "question": "Is your character skilled in engineering?",
+    "priority": 7
+  },
+  {
+    "trait": "ability_eye_power",
+    "group": "abilities",
+    "question": "Does your character have special eye powers?",
+    "priority": 7
+  },
+  {
+    "trait": "ability_fire_style",
+    "group": "abilities",
+    "question": "Does your character primarily use fire?",
+    "priority": 7
+  },
+  {
+    "trait": "ability_flight",
+    "group": "abilities",
+    "question": "Can your character fly?",
+    "priority": 7
+  },
+  {
+    "trait": "ability_forcefield",
+    "group": "abilities",
+    "question": "Can your character create forcefields?",
+    "priority": 7
+  },
+  {
+    "trait": "ability_healer",
+    "group": "abilities",
+    "question": "Can your character heal others?",
+    "priority": 7
+  },
+  {
+    "trait": "ability_ice_style",
+    "group": "abilities",
+    "question": "Does your character primarily use ice techniques?",
+    "priority": 7
+  },
+  {
+    "trait": "ability_invisibility",
+    "group": "abilities",
+    "question": "Can your character turn invisible?",
+    "priority": 7
+  },
+  {
+    "trait": "ability_lightning_style",
+    "group": "abilities",
+    "question": "Does your character use lightning-based attacks?",
+    "priority": 7
+  },
+  {
+    "trait": "ability_magic",
+    "group": "abilities",
+    "question": "Can your character use magic?",
+    "priority": 7
+  },
+  {
+    "trait": "ability_marksman_guns",
+    "group": "abilities",
+    "question": "Is your character skilled with guns?",
+    "priority": 7
+  },
+  {
+    "trait": "ability_martial_artist",
+    "group": "abilities",
+    "question": "Is your character a martial artist?",
+    "priority": 7
+  },
+  {
+    "trait": "ability_pilot",
+    "group": "abilities",
+    "question": "Is your character skilled at piloting?",
+    "priority": 7
+  },
+  {
+    "trait": "ability_precognition",
+    "group": "abilities",
+    "question": "Does your character have precognitive senses?",
+    "priority": 7
+  },
+  {
+    "trait": "ability_psychic",
+    "group": "abilities",
+    "question": "Does your character have psychic powers?",
+    "priority": 7
+  },
+  {
+    "trait": "ability_regeneration",
+    "group": "abilities",
+    "question": "Can your character heal or regenerate quickly?",
+    "priority": 7
+  },
+  {
+    "trait": "ability_shapeshift",
+    "group": "abilities",
+    "question": "Can your character shapeshift?",
+    "priority": 7
+  },
+  {
+    "trait": "ability_shield_user",
+    "group": "abilities",
+    "question": "Does your character fight with a shield?",
+    "priority": 7
+  },
+  {
+    "trait": "ability_sonic_speed",
+    "group": "abilities",
+    "question": "Can your character move at sonic speed?",
+    "priority": 7
+  },
+  {
+    "trait": "ability_spear_user",
+    "group": "abilities",
+    "question": "Does your character fight with a spear or trident?",
+    "priority": 7
+  },
+  {
+    "trait": "ability_stealth",
+    "group": "abilities",
+    "question": "Is your character skilled in stealth?",
+    "priority": 7
+  },
+  {
+    "trait": "ability_strategist",
+    "group": "abilities",
+    "question": "Is your character known for strategic planning?",
+    "priority": 7
+  },
+  {
+    "trait": "ability_super_speed",
+    "group": "abilities",
+    "question": "Is your character super fast?",
+    "priority": 7
+  },
+  {
+    "trait": "ability_super_strength",
+    "group": "abilities",
+    "question": "Is your character super strong?",
+    "priority": 7
+  },
+  {
+    "trait": "ability_swordsman",
+    "group": "abilities",
+    "question": "Is your character skilled with swords?",
+    "priority": 7
+  },
+  {
+    "trait": "ability_tech_gadgets",
+    "group": "abilities",
+    "question": "Does your character rely on tech or gadgets?",
+    "priority": 7
+  },
+  {
+    "trait": "ability_tech_inventor",
+    "group": "abilities",
+    "question": "Is your character a tech inventor?",
+    "priority": 7
+  },
+  {
+    "trait": "ability_teleport",
+    "group": "abilities",
+    "question": "Can your character teleport?",
+    "priority": 7
+  },
+  {
+    "trait": "ability_water_style",
+    "group": "abilities",
+    "question": "Does your character primarily use water techniques?",
+    "priority": 7
+  },
+  {
+    "trait": "ability_web_sling",
+    "group": "abilities",
+    "question": "Does your character use webs or grapples to move?",
+    "priority": 7
+  },
+  {
+    "trait": "ai_entity",
+    "group": "other",
+    "question": "Is your character an AI entity?",
+    "priority": 7
+  },
+  {
+    "trait": "billionaire_genius_inventor",
+    "group": "other",
+    "question": "Is your character a billionaire genius inventor?",
+    "priority": 7
+  },
+  {
+    "trait": "billionaire_vigilante",
+    "group": "other",
+    "question": "Is your character a billionaire vigilante?",
+    "priority": 7
+  },
+  {
+    "trait": "boar_mask_wearer",
+    "group": "other",
+    "question": "Does your character wear a boar mask?",
+    "priority": 7
+  },
+  {
+    "trait": "breathing_water_style",
+    "group": "other",
+    "question": "Does your character use water breathing style?",
+    "priority": 7
+  },
+  {
+    "trait": "demon_slayers_mark",
+    "group": "other",
+    "question": "Does your character bear the Demon Slayer mark?",
+    "priority": 7
+  },
+  {
+    "trait": "devil_fruit_user",
+    "group": "other",
+    "question": "Has your character eaten a Devil Fruit?",
+    "priority": 7
+  },
+  {
+    "trait": "dragonborn_bond",
+    "group": "other",
+    "question": "Does your character command dragons?",
+    "priority": 7
+  },
+  {
+    "trait": "electric_mouse",
+    "group": "other",
+    "question": "Is your character an electric mouse Pok?mon?",
+    "priority": 7
+  },
+  {
+    "trait": "gamma_mutation",
+    "group": "other",
+    "question": "Was your character changed by gamma radiation?",
+    "priority": 7
+  },
+  {
+    "trait": "gender_f",
+    "group": "other",
+    "question": "Is your character female?",
+    "priority": 7
+  },
+  {
+    "trait": "gender_m",
+    "group": "other",
+    "question": "Is your character male?",
+    "priority": 7
+  },
+  {
+    "trait": "god_of_thunder",
+    "group": "other",
+    "question": "Is your character the god of thunder?",
+    "priority": 7
+  },
+  {
+    "trait": "gum_gum_power",
+    "group": "other",
+    "question": "Does your character have Gum-Gum powers?",
+    "priority": 7
+  },
+  {
+    "trait": "hylian_hero",
+    "group": "other",
+    "question": "Is your character the Hylian hero?",
+    "priority": 7
+  },
+  {
+    "trait": "ice_queen",
+    "group": "other",
+    "question": "Is your character the ice queen?",
+    "priority": 7
+  },
+  {
+    "trait": "matrix_the_one",
+    "group": "other",
+    "question": "Is your character 'The One' from the Matrix?",
+    "priority": 7
+  },
+  {
+    "trait": "nine_tails_host",
+    "group": "other",
+    "question": "Is your character host to the Nine-Tails?",
+    "priority": 7
+  },
+  {
+    "trait": "ogre_form",
+    "group": "other",
+    "question": "Is your character an ogre or ogre-transformed?",
+    "priority": 7
+  },
+  {
+    "trait": "omni_gear_user",
+    "group": "other",
+    "question": "Does your character use omni-directional gear?",
+    "priority": 7
+  },
+  {
+    "trait": "pirate_captain_hat",
+    "group": "other",
+    "question": "Is your character a pirate captain known for their hat?",
+    "priority": 7
+  },
+  {
+    "trait": "pokeball_trainer",
+    "group": "other",
+    "question": "Does your character train Pok?mon with Pok? Balls?",
+    "priority": 7
+  },
+  {
+    "trait": "portal_master",
+    "group": "other",
+    "question": "Does your character wield portal magic?",
+    "priority": 7
+  },
+  {
+    "trait": "ringbearer",
+    "group": "other",
+    "question": "Does your character carry the One Ring?",
+    "priority": 7
+  },
+  {
+    "trait": "sharingan_user",
+    "group": "other",
+    "question": "Does your character have the Sharingan?",
+    "priority": 7
+  },
+  {
+    "trait": "spartan_super_soldier",
+    "group": "other",
+    "question": "Is your character a Spartan super-soldier?",
+    "priority": 7
+  },
+  {
+    "trait": "straw_hat_wearer",
+    "group": "other",
+    "question": "Does your character wear a straw hat as a signature?",
+    "priority": 7
+  },
+  {
+    "trait": "super_soldier_serum",
+    "group": "other",
+    "question": "Was your character enhanced by a super-soldier serum?",
+    "priority": 7
+  },
+  {
+    "trait": "survey_corps_member",
+    "group": "other",
+    "question": "Is your character a member of the Survey Corps?",
+    "priority": 7
+  },
+  {
+    "trait": "titan_shifter",
+    "group": "other",
+    "question": "Can your character transform into a Titan?",
+    "priority": 7
+  },
+  {
+    "trait": "toys_come_alive",
+    "group": "other",
+    "question": "Is your character a living toy?",
+    "priority": 7
+  },
+  {
+    "trait": "triforce_holder",
+    "group": "other",
+    "question": "Does your character hold part of the Triforce?",
+    "priority": 7
+  },
+  {
+    "trait": "vibranium_suit",
+    "group": "other",
+    "question": "Does your character wear a Vibranium suit?",
+    "priority": 7
+  },
+  {
+    "trait": "wand_user",
+    "group": "other",
+    "question": "Does your character use a magic wand?",
+    "priority": 7
+  },
+  {
+    "trait": "weapon_lightsaber_user",
+    "group": "other",
+    "question": "Does your character wield a lightsaber?",
+    "priority": 7
+  },
+  {
+    "trait": "webslinger_nyc",
+    "group": "other",
+    "question": "Is your character the NYC web-slinger?",
+    "priority": 7
+  },
+  {
+    "trait": "witcher_mutation",
+    "group": "other",
+    "question": "Is your character mutated as a Witcher?",
+    "priority": 7
+  },
+  {
+    "trait": "witcher_signs_user",
+    "group": "other",
+    "question": "Does your character use Witcher signs?",
+    "priority": 7
+  },
+  {
+    "trait": "appearance_armor_heavy",
     "group": "appearance",
-    "question": "Does your character wear a white rose?"
+    "question": "Does your character wear heavy armor?",
+    "priority": 8
   },
   {
-    "trait": "appearance_has_white_suit",
+    "trait": "appearance_armor_suit",
     "group": "appearance",
-    "question": "Does your character wear a white suit?"
+    "question": "Does your character wear armor or a powered suit?",
+    "priority": 8
   },
   {
-    "trait": "role_president",
-    "group": "role",
-    "question": "Is your character a president?"
-  },
-  {
-    "trait": "abilities_chess_player",
-    "group": "abilities",
-    "question": "Is your character skilled at chess?"
-  },
-  {
-    "trait": "abilities_wand_user",
-    "group": "abilities",
-    "question": "Does your character use a wand?"
-  },
-  {
-    "trait": "appearance_freckles",
+    "trait": "appearance_black_theme",
     "group": "appearance",
-    "question": "Does your character have freckles?"
+    "question": "Is black a signature part of your character's look?",
+    "priority": 8
   },
   {
-    "trait": "role_gryffindor",
-    "group": "role",
-    "question": "Is your character in Gryffindor house?"
+    "trait": "appearance_blue_theme",
+    "group": "appearance",
+    "question": "Is blue a signature color for your character?",
+    "priority": 8
   },
   {
-    "trait": "archetype_sidekick_best_friend",
-    "group": "archetype",
-    "question": "Is your character the best friend sidekick?"
+    "trait": "appearance_cape_hood",
+    "group": "appearance",
+    "question": "Does your character wear a cape or hood?",
+    "priority": 8
   },
   {
-    "trait": "personality_food_lover",
+    "trait": "appearance_dark_theme",
+    "group": "appearance",
+    "question": "Does your character have a dark-themed look?",
+    "priority": 8
+  },
+  {
+    "trait": "appearance_glowing_eyes",
+    "group": "appearance",
+    "question": "Does your character's eyes glow?",
+    "priority": 8
+  },
+  {
+    "trait": "appearance_goggles_glasses",
+    "group": "appearance",
+    "question": "Does your character wear goggles or glasses?",
+    "priority": 8
+  },
+  {
+    "trait": "appearance_green_theme",
+    "group": "appearance",
+    "question": "Is green a signature color for your character?",
+    "priority": 8
+  },
+  {
+    "trait": "appearance_hat_headgear",
+    "group": "appearance",
+    "question": "Is your character known for a hat or headgear?",
+    "priority": 8
+  },
+  {
+    "trait": "appearance_headband_or_clan_symbol",
+    "group": "appearance",
+    "question": "Does your character wear a headband or clan symbol?",
+    "priority": 8
+  },
+  {
+    "trait": "appearance_iconic_weapon",
+    "group": "appearance",
+    "question": "Does your character carry an iconic weapon?",
+    "priority": 8
+  },
+  {
+    "trait": "appearance_mask_helmet",
+    "group": "appearance",
+    "question": "Does your character wear a mask or helmet?",
+    "priority": 8
+  },
+  {
+    "trait": "appearance_purple_theme",
+    "group": "appearance",
+    "question": "Is purple a signature part of your character's look?",
+    "priority": 8
+  },
+  {
+    "trait": "appearance_red_theme",
+    "group": "appearance",
+    "question": "Is red a signature color for your character?",
+    "priority": 8
+  },
+  {
+    "trait": "appearance_robofeature",
+    "group": "appearance",
+    "question": "Does your character have visible robotic features?",
+    "priority": 8
+  },
+  {
+    "trait": "appearance_robotic_limb",
+    "group": "appearance",
+    "question": "Does your character have a robotic limb?",
+    "priority": 8
+  },
+  {
+    "trait": "appearance_scar_visible",
+    "group": "appearance",
+    "question": "Does your character have a visible scar?",
+    "priority": 8
+  },
+  {
+    "trait": "appearance_signature_vehicle",
+    "group": "appearance",
+    "question": "Is your character associated with a signature vehicle?",
+    "priority": 8
+  },
+  {
+    "trait": "appearance_tail",
+    "group": "appearance",
+    "question": "Does your character have a tail?",
+    "priority": 8
+  },
+  {
+    "trait": "appearance_tattoos_markings",
+    "group": "appearance",
+    "question": "Does your character have notable tattoos or markings?",
+    "priority": 8
+  },
+  {
+    "trait": "appearance_white_theme",
+    "group": "appearance",
+    "question": "Is white a signature part of your character's look?",
+    "priority": 8
+  },
+  {
+    "trait": "appearance_wings",
+    "group": "appearance",
+    "question": "Does your character have wings or a jetpack-like flight gear?",
+    "priority": 8
+  },
+  {
+    "trait": "personality_ambitious",
     "group": "personality",
-    "question": "Does your character love food?"
+    "question": "Is your character ambitious?",
+    "priority": 9
   },
   {
-    "trait": "abilities_elder_wand",
-    "group": "abilities",
-    "question": "Does your character have the Elder Wand?"
-  },
-  {
-    "trait": "abilities_phoenix_owner",
-    "group": "abilities",
-    "question": "Does your character own a phoenix?"
-  },
-  {
-    "trait": "abilities_alchemist",
-    "group": "abilities",
-    "question": "Is your character an alchemist?"
-  },
-  {
-    "trait": "appearance_half_moon_glasses",
-    "group": "appearance",
-    "question": "Does your character wear half-moon glasses?"
-  },
-  {
-    "trait": "appearance_very_long_beard",
-    "group": "appearance",
-    "question": "Does your character sport a very long beard?"
-  },
-  {
-    "trait": "appearance_colorful_robes",
-    "group": "appearance",
-    "question": "Does your character dress in colorful robes?"
-  },
-  {
-    "trait": "role_headmaster_hogwarts",
-    "group": "role",
-    "question": "Is your character the headmaster of Hogwarts?"
-  },
-  {
-    "trait": "role_order_of_phoenix_leader",
-    "group": "role",
-    "question": "Does your character lead the Order of the Phoenix?"
-  },
-  {
-    "trait": "appearance_has_pipe",
-    "group": "appearance",
-    "question": "Does your character smoke a pipe?"
-  },
-  {
-    "trait": "abilities_violin",
-    "group": "abilities",
-    "question": "Can your character play the violin?"
-  },
-  {
-    "trait": "abilities_disguise",
-    "group": "abilities",
-    "question": "Is your character skilled at disguises?"
-  },
-  {
-    "trait": "abilities_observation",
-    "group": "abilities",
-    "question": "Is your character exceptionally observant?"
-  },
-  {
-    "trait": "role_consulting_detective",
-    "group": "role",
-    "question": "Is your character a consulting detective?"
-  },
-  {
-    "trait": "archetype_sleuth",
-    "group": "archetype",
-    "question": "Is your character an investigator?"
-  },
-  {
-    "trait": "abilities_jedi_mind_trick",
-    "group": "abilities",
-    "question": "Can your character use Jedi mind tricks?"
-  },
-  {
-    "trait": "archetype_jedi_knight",
-    "group": "archetype",
-    "question": "Is your character a Jedi Knight?"
-  },
-  {
-    "trait": "abilities_duplication",
-    "group": "abilities",
-    "question": "Can your character create duplicates or clones of themselves?"
-  },
-  {
-    "trait": "abilities_scepter",
-    "group": "abilities",
-    "question": "Does your character wield a powerful scepter?"
-  },
-  {
-    "trait": "archetype_asgardian",
-    "group": "archetype",
-    "question": "Is your character from Asgard?"
-  },
-  {
-    "trait": "personality_theatrical",
+    "trait": "personality_brooding",
     "group": "personality",
-    "question": "Is your character dramatic in their personality?"
+    "question": "Is your character brooding or stoic?",
+    "priority": 9
   },
   {
-    "trait": "appearance_has_blaster",
-    "group": "appearance",
-    "question": "Does your character carry a blaster?"
-  },
-  {
-    "trait": "abilities_millennium_falcon",
-    "group": "abilities",
-    "question": "Does your character pilot the Millennium Falcon?"
-  },
-  {
-    "trait": "archetype_space_cowboy",
-    "group": "archetype",
-    "question": "Is your character like a space cowboy?"
-  },
-  {
-    "trait": "personality_roguish",
+    "trait": "personality_calm",
     "group": "personality",
-    "question": "Does your character have a roguish personality?"
+    "question": "Is your character calm under pressure?",
+    "priority": 9
   },
   {
-    "trait": "appearance_hair_bushy",
-    "group": "appearance",
-    "question": "Does your character have bushy or frizzy hair?"
-  },
-  {
-    "trait": "appearance_has_wand",
-    "group": "appearance",
-    "question": "Does your character carry a wand?"
-  },
-  {
-    "trait": "abilities_spell_expert",
-    "group": "abilities",
-    "question": "Is your character an expert at casting spells?"
-  },
-  {
-    "trait": "abilities_time_turner",
-    "group": "abilities",
-    "question": "Has your character used a Time-Turner?"
-  },
-  {
-    "trait": "abilities_research",
-    "group": "abilities",
-    "question": "Is your character excellent at research and studying?"
-  },
-  {
-    "trait": "role_brightest_student",
-    "group": "role",
-    "question": "Is your character known as the brightest student?"
-  },
-  {
-    "trait": "archetype_bookworm",
-    "group": "archetype",
-    "question": "Is your character a bookworm who loves to read?"
-  },
-  {
-    "trait": "personality_bossy",
+    "trait": "personality_charismatic",
     "group": "personality",
-    "question": "Is your character sometimes bossy or know-it-all?"
+    "question": "Is your character charismatic?",
+    "priority": 9
   },
   {
-    "trait": "franchise_british",
-    "group": "franchise",
-    "question": "Is your character from a British franchise?"
-  },
-  {
-    "trait": "appearance_tuxedo",
-    "group": "appearance",
-    "question": "Does your character frequently wear a tuxedo?"
-  },
-  {
-    "trait": "abilities_seduction",
-    "group": "abilities",
-    "question": "Is your character charming?"
-  },
-  {
-    "trait": "abilities_007",
-    "group": "abilities",
-    "question": "Is your character a secret agent with a number code like 007?"
-  },
-  {
-    "trait": "role_secret_agent",
-    "group": "role",
-    "question": "Is your character a secret agent?"
-  },
-  {
-    "trait": "archetype_007",
-    "group": "archetype",
-    "question": "Is your character Agent 007?"
-  },
-  {
-    "trait": "personality_sophisticated",
+    "trait": "personality_clever",
     "group": "personality",
-    "question": "Is your character sophisticated?"
+    "question": "Is your character clever?",
+    "priority": 9
   },
   {
-    "trait": "abilities_writing",
-    "group": "abilities",
-    "question": "Is your character skilled at writing?"
-  },
-  {
-    "trait": "abilities_military",
-    "group": "abilities",
-    "question": "Does your character have military training or experience?"
-  },
-  {
-    "trait": "role_chronicler",
-    "group": "role",
-    "question": "Does your character document events?"
-  },
-  {
-    "trait": "archetype_army_doctor",
-    "group": "archetype",
-    "question": "Is your character a military doctor?"
-  },
-  {
-    "trait": "archetype_biographer",
-    "group": "archetype",
-    "question": "Does your character write about someone's life story?"
-  },
-  {
-    "trait": "personality_patient",
+    "trait": "personality_cold",
     "group": "personality",
-    "question": "Is your character notably patient?"
+    "question": "Is your character cold or distant?",
+    "priority": 9
   },
   {
-    "trait": "abilities_baking",
-    "group": "abilities",
-    "question": "Is your character skilled at baking?"
-  },
-  {
-    "trait": "abilities_painting",
-    "group": "abilities",
-    "question": "Is your character skilled at painting or art?"
-  },
-  {
-    "trait": "abilities_cake_decorating",
-    "group": "abilities",
-    "question": "Is your character skilled at cake decorating?"
-  },
-  {
-    "trait": "role_tribute",
-    "group": "role",
-    "question": "Is your character a tribute in a deadly competition?"
-  },
-  {
-    "trait": "archetype_tribute",
-    "group": "archetype",
-    "question": "Has your character been a tribute in the Hunger Games?"
-  },
-  {
-    "trait": "personality_romantic",
+    "trait": "personality_cunning",
     "group": "personality",
-    "question": "Is your character romantic?"
+    "question": "Is your character cunning?",
+    "priority": 9
   },
   {
-    "trait": "appearance_has_pin",
-    "group": "appearance",
-    "question": "Does your character wear a distinctive pin?"
-  },
-  {
-    "trait": "appearance_mockingjay",
-    "group": "appearance",
-    "question": "Is your character associated with a mockingjay symbol?"
-  },
-  {
-    "trait": "abilities_hunting",
-    "group": "abilities",
-    "question": "Is your character skilled at hunting?"
-  },
-  {
-    "trait": "abilities_archery_expert",
-    "group": "abilities",
-    "question": "Is your character an expert archer?"
-  },
-  {
-    "trait": "role_mockingjay",
-    "group": "role",
-    "question": "Is your character known as the Mockingjay?"
-  },
-  {
-    "trait": "role_symbol",
-    "group": "role",
-    "question": "Is your character a symbol of rebellion?"
-  },
-  {
-    "trait": "personality_reluctant_hero",
+    "trait": "personality_funny",
     "group": "personality",
-    "question": "Is your character a reluctant hero who didn't want the role?"
+    "question": "Is your character known for being funny?",
+    "priority": 9
   },
   {
-    "trait": "appearance_white_roses",
-    "group": "appearance",
-    "question": "Is your character associated with white roses?"
+    "trait": "personality_honorable",
+    "group": "personality",
+    "question": "Is your character honorable?",
+    "priority": 9
   },
   {
-    "trait": "abilities_political_power",
-    "group": "abilities",
-    "question": "Does your character wield significant political power?"
+    "trait": "personality_hotheaded",
+    "group": "personality",
+    "question": "Is your character hotheaded?",
+    "priority": 9
   },
   {
-    "trait": "abilities_poison",
-    "group": "abilities",
-    "question": "Does your character use poison as a weapon?"
+    "trait": "personality_impulsive",
+    "group": "personality",
+    "question": "Is your character impulsive?",
+    "priority": 9
   },
   {
-    "trait": "role_president",
-    "group": "role",
-    "question": "Is your character a president?"
+    "trait": "personality_loyal",
+    "group": "personality",
+    "question": "Is your character loyal?",
+    "priority": 9
   },
   {
-    "trait": "archetype_tyrant",
-    "group": "archetype",
-    "question": "Is your character an oppressive ruler?"
+    "trait": "personality_protective",
+    "group": "personality",
+    "question": "Is your character protective of others?",
+    "priority": 9
   },
   {
-    "trait": "appearance_distinctive_helmet",
-    "group": "appearance",
-    "question": "Does your character wear an iconic helmet?"
+    "trait": "personality_ruthless",
+    "group": "personality",
+    "question": "Is your character ruthless?",
+    "priority": 9
   },
   {
-    "trait": "appearance_has_roses",
-    "group": "appearance",
-    "question": "Does your character have roses?"
+    "trait": "personality_sarcastic",
+    "group": "personality",
+    "question": "Is your character sarcastic?",
+    "priority": 9
   },
   {
-    "trait": "appearance_distinctive_hat",
-    "group": "appearance",
-    "question": "Does your character wear a distinctive hat?"
+    "trait": "personality_selfless",
+    "group": "personality",
+    "question": "Is your character selfless?",
+    "priority": 9
   },
   {
-    "trait": "appearance_distinctive_vest",
-    "group": "appearance",
-    "question": "Does your character wear a distinctive vest?"
+    "trait": "personality_serious",
+    "group": "personality",
+    "question": "Is your character serious?",
+    "priority": 9
   },
   {
-    "trait": "franchise_book",
-    "group": "franchise",
-    "question": "Did your character originate from a book?"
+    "trait": "personality_vengeful",
+    "group": "personality",
+    "question": "Is your character driven by vengeance?",
+    "priority": 9
   },
   {
-    "trait": "abilities_shooting",
-    "group": "abilities",
-    "question": "Is your character an expert marksman?"
-  },
-  {
-    "trait": "appearance_lightning_scar",
-    "group": "appearance",
-    "question": "Does your character have a lightning bolt-shaped scar?"
-  },
-  {
-    "trait": "abilities_parseltongue",
-    "group": "abilities",
-    "question": "Can your character speak Parseltongue (talk to snakes)?"
-  },
-  {
-    "trait": "abilities_patronus",
-    "group": "abilities",
-    "question": "Can your character cast a Patronus charm?"
-  },
-  {
-    "trait": "role_boy_who_lived",
-    "group": "role",
-    "question": "Is your character known as 'The Boy Who Lived'?"
-  },
-  {
-    "trait": "archetype_seeker",
-    "group": "archetype",
-    "question": "Is your character a Seeker in Quidditch?"
-  },
-  {
-    "trait": "appearance_hair_buns",
-    "group": "appearance",
-    "question": "Does your character wear their hair in buns?"
-  },
-  {
-    "trait": "role_princess",
-    "group": "role",
-    "question": "Is your character a princess?"
-  },
-  {
-    "trait": "role_sister",
-    "group": "role",
-    "question": "Does your character have an important sibling relationship?"
-  },
-  {
-    "trait": "appearance_breathing_apparatus",
-    "group": "appearance",
-    "question": "Does your character wear a breathing apparatus?"
-  },
-  {
-    "trait": "abilities_force_choke",
-    "group": "abilities",
-    "question": "Can your character perform a Force choke?"
-  },
-  {
-    "trait": "abilities_dark_side",
-    "group": "abilities",
-    "question": "Does your character use the dark side of the Force?"
-  },
-  {
-    "trait": "role_father",
-    "group": "role",
-    "question": "Is your character someone's father?"
-  },
-  {
-    "trait": "archetype_dark_lord",
-    "group": "archetype",
-    "question": "Is your character a dark lord?"
-  },
-  {
-    "trait": "appearance_freckles",
-    "group": "appearance",
-    "question": "Does your character have freckles?"
-  },
-  {
-    "trait": "abilities_chess",
-    "group": "abilities",
-    "question": "Is your character skilled at chess?"
-  },
-  {
-    "trait": "archetype_keeper",
-    "group": "archetype",
-    "question": "Is your character a Keeper in Quidditch?"
+    "trait": "personality_wise",
+    "group": "personality",
+    "question": "Is your character wise?",
+    "priority": 9
   }
 ]

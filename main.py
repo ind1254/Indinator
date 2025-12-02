@@ -9,7 +9,7 @@ from pathlib import Path
 project_root = Path(__file__).parent
 sys.path.insert(0, str(project_root))
 
-from indinator import AkinatorAI, AkinatorGame
+from indinator import DecisionTreeAI, AkinatorGame
 
 
 def main():
@@ -18,7 +18,6 @@ def main():
     data_dir = project_root / "data"
     traits_file = data_dir / "traits_flat.json"
     questions_file = data_dir / "questions.json"
-    characters_file = data_dir / "characters.json"
     
     # Check if required files exist
     missing_files = []
@@ -26,8 +25,6 @@ def main():
         missing_files.append(str(traits_file))
     if not questions_file.exists():
         missing_files.append(str(questions_file))
-    if not characters_file.exists():
-        missing_files.append(str(characters_file))
     
     if missing_files:
         print("❌ Error: Missing required data files:")
@@ -37,17 +34,17 @@ def main():
         return 1
     
     try:
-        # Initialize AI engine
-        print("🔧 Initializing AI engine...")
-        ai = AkinatorAI(
+        # Initialize Decision Tree AI engine
+        print("🔧 Initializing Decision Tree AI engine...")
+        ai = DecisionTreeAI(
             traits_file=str(traits_file),
-            questions_file=str(questions_file),
-            characters_file=str(characters_file)
+            questions_file=str(questions_file)
         )
         
         # Create and run game
         print("✓ AI engine ready!\n")
-        game = AkinatorGame(ai)
+        # More eager guessing for live play: lower confidence and min questions
+        game = AkinatorGame(ai, confidence_threshold=0.75, min_questions=4)
         game.run()
         
         return 0
@@ -61,4 +58,3 @@ def main():
 
 if __name__ == "__main__":
     sys.exit(main())
-

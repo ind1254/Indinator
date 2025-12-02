@@ -1,408 +1,348 @@
 """
-CLI Game Interface for Akinator Clone
-Handles user interaction and game flow.
+Akinator Game - CLI interface for Decision Tree AI
+Handles user interaction and game loop.
 """
 
-from typing import Optional
-from .ai_engine import AkinatorAI
+from typing import Optional, Literal
+from .decision_tree_engine import DecisionTreeAI
+
+# Answer types for user responses
+AnswerType = Literal["yes", "no", "probably", "probably_not", "dont_know"]
 
 
 class AkinatorGame:
-    """Command-line interface for the Akinator game."""
+    """
+    Main game class that handles user interaction and game loop.
     
-    def __init__(self, ai_engine: AkinatorAI):
-        """Initialize game with AI engine."""
-        self.ai = ai_engine
-        self.max_questions = 25
-        
-        # Track game stats for learning
-        self.current_game_questions = []
-        self.current_game_traits = []
-        self.current_game_guesses = []
-        self.current_game_entropy_reductions = []
-        self.current_game_rl_states = []  # RL states for each step
-        
-    def print_header(self):
-        """Print game header."""
-        print("\n" + "="*60)
-        print("  🎭  INDINATOR - AI Character Guessing Game  🎭")
-        print("="*60)
-        print("\nThink of a character from the list, and I'll try to guess it!")
-        print(f"I have {self.ai.num_characters} characters in my database.\n")
+    Uses DecisionTreeAI to select questions and make guesses.
+    """
     
-    def print_divider(self):
-        """Print a visual divider."""
-        print("-" * 60)
-    
-    def get_yes_no_input(self, prompt: str) -> Optional[bool]:
+    def __init__(self, ai: DecisionTreeAI, max_questions: int = 30, confidence_threshold: float = 0.85, 
+                 min_questions: int = 5, show_stats: bool = True):
         """
-        Get yes/no input from user.
-        
-        Returns:
-            True for yes, False for no, None for skip/don't know
-        """
-        while True:
-            response = input(f"{prompt} (yes/no/skip): ").strip().lower()
-            
-            if response in ['y', 'yes']:
-                return True
-            elif response in ['n', 'no']:
-                return False
-            elif response in ['s', 'skip', 'idk', "don't know", "dont know"]:
-                return None
-            elif response in ['quit', 'exit', 'q']:
-                print("\n👋 Thanks for playing!")
-                return 'quit'
-            else:
-                print("❌ Please answer 'yes', 'no', or 'skip'")
-    
-    def show_stats(self):
-        """Display current game statistics."""
-        stats = self.ai.get_stats()
-        
-        print(f"\n📊 Current Stats:")
-        print(f"   Questions asked: {stats['questions_asked']}/{self.max_questions}")
-        print(f"   Remaining candidates: {stats['remaining_candidates']}")
-        print(f"   Top guess: {stats['top_character'][0]} ({stats['top_character'][1]*100:.1f}%)")
-        
-        if stats['remaining_candidates'] <= 10:
-            print(f"   Candidates: {', '.join(stats['candidate_names'])}")
-    
-    def make_guess(self, continue_on_wrong: bool = True) -> bool:
-        """
-        Make a guess and check if correct.
+        Initialize the game with an AI engine.
         
         Args:
-            continue_on_wrong: If True, penalize wrong guess and continue game
+            ai: DecisionTreeAI instance to use for question selection and guessing
+            max_questions: Maximum number of questions to ask before forcing a guess (default: 30)
+            confidence_threshold: Confidence threshold for making a guess (default: 0.85 = 85%)
+            min_questions: Minimum questions to ask before allowing a guess (default: 5)
+            show_stats: Whether to show stats after each question (default: True)
+        """
+        self.ai = ai
+        self.max_questions = max_questions
+        self.confidence_threshold = confidence_threshold
+        self.min_questions = min_questions
+        self.show_stats = show_stats
+        
+        # Game statistics (optional, for tracking)
+        self.games_played = 0
+        self.games_won = 0
+    
+    def run(self):
+        """
+        Main game loop.
+        
+        Handles:
+        - Asking questions
+        - Getting user answers
+        - Making guesses
+        - Handling correct/incorrect guesses
+        - Game restart
+        """
+        print("=" * 60)
+        print("🎮 Welcome to Indinator!")
+        print("Think of a character, and I'll try to guess it!")
+        print("=" * 60)
+        
+        # Main game loop (can play multiple games)
+        while True:
+            # Start a new game
+            self.ai.reset()
+            self.games_played += 1
+            
+            print(f"\n🎯 Game #{self.games_played}")
+            print("Think of a character...\n")
+            
+            # Question-asking loop
+            questions_asked = 0
+            game_won = False
+            
+            while questions_asked < self.max_questions:
+                # Check if we should make a guess (only after minimum questions)
+                if questions_asked >= self.min_questions and self.ai.should_make_guess(self.confidence_threshold):
+                    # Make a guess
+                    if self._make_guess():
+                        game_won = True
+                        self.games_won += 1
+                        self._handle_correct_guess(self.ai.get_best_guess()[0])
+                        break
+                    else:
+                        # Wrong guess - continue asking questions
+                        self._handle_wrong_guess(self.ai.get_best_guess()[0])
+                        # Continue asking questions
+                
+                # Select next question
+                question_idx = self.ai.select_best_question()
+                
+                if question_idx is None:
+                    # No more questions available - check if we should make a guess
+                    # Only guess if we meet the safety criteria (confidence, candidates, etc.)
+                    if questions_asked >= self.min_questions and self.ai.should_make_guess(self.confidence_threshold):
+                        if self._make_guess():
+                            game_won = True
+                            self.games_won += 1
+                            self._handle_correct_guess(self.ai.get_best_guess()[0])
+                        else:
+                            self._handle_wrong_guess(self.ai.get_best_guess()[0])
+                        break
+                    else:
+                        # Can't select a question and shouldn't guess yet - this shouldn't happen
+                        # but if it does, force a guess as last resort
+                        print("\n⚠️  Warning: No more questions available but criteria not met. Making final guess...")
+                        if self._make_guess():
+                            game_won = True
+                            self.games_won += 1
+                            self._handle_correct_guess(self.ai.get_best_guess()[0])
+                        else:
+                            self._handle_wrong_guess(self.ai.get_best_guess()[0])
+                        break
+                
+                # Ask the question
+                answer = self._ask_question(question_idx)
+                
+                if answer is None:
+                    # User wants to quit or reveal answer
+                    revealed_char = self._reveal_answer()
+                    if revealed_char:
+                        self.ai.boost_character(revealed_char)
+                        print(f"\n✓ Got it! The character was: {revealed_char}")
+                        self.games_won += 1
+                    break
+                
+                # Update AI with the answer
+                self.ai.update_probabilities(question_idx, answer)
+                questions_asked += 1
+                
+                # Show stats after each question
+                if self.show_stats:
+                    self._display_stats()
+            
+            # If we hit max questions without winning, ask user to reveal
+            if not game_won and questions_asked >= self.max_questions:
+                print(f"\n🤔 I've asked {questions_asked} questions. Let me make a final guess...")
+                if self._make_guess():
+                    game_won = True
+                    self.games_won += 1
+                    self._handle_correct_guess(self.ai.get_best_guess()[0])
+                else:
+                    revealed_char = self._reveal_answer()
+                    if revealed_char:
+                        self.ai.boost_character(revealed_char)
+                        print(f"\n✓ Got it! The character was: {revealed_char}")
+            
+            # Ask if user wants to play again
+            if not self._play_again():
+                break
+        
+        # Game over - show statistics
+        print("\n" + "=" * 60)
+        print("🎮 Thanks for playing Indinator!")
+        if self.games_played > 0:
+            win_rate = (self.games_won / self.games_played) * 100
+            print(f"📊 Games played: {self.games_played}")
+            print(f"🏆 Games won: {self.games_won}")
+            print(f"📈 Win rate: {win_rate:.1f}%")
+        print("=" * 60)
+    
+    def _ask_question(self, question_idx: int) -> Optional[AnswerType]:
+        """
+        Ask a question to the user and get their answer.
+        
+        Args:
+            question_idx: Index of the question to ask
+            
+        Returns:
+            Answer type: "yes", "no", "probably", "probably_not", "dont_know"
+            None if user wants to quit/guess
+        """
+        # Get question text
+        if question_idx < 0 or question_idx >= len(self.ai.questions):
+            return None
+        
+        question_data = self.ai.questions[question_idx]
+        question_text = question_data.get('question', '')
+        
+        # Display question
+        print(f"❓ {question_text}")
+        print("   (y/n/p/pn/dk/guess/quit): ", end="", flush=True)
+        print("\n   y=yes, n=no, p=probably, pn=probably not, dk=don't know", end="", flush=True)
+        print("\n   Enter choice: ", end="", flush=True)
+        
+        # Get user input
+        while True:
+            try:
+                user_input = input().strip().lower()
+                
+                # Parse input
+                if user_input in ['y', 'yes', '1', 'true']:
+                    return "yes"
+                elif user_input in ['n', 'no', '0', 'false']:
+                    return "no"
+                elif user_input in ['p', 'probably', 'likely', 'likely yes']:
+                    return "probably"
+                elif user_input in ['pn', 'probably not', 'probably_not', 'likely not', 'likely_no']:
+                    return "probably_not"
+                elif user_input in ['dk', "don't know", 'dont know', 'dont_know', 'unknown', '?', 'skip']:
+                    return "dont_know"
+                elif user_input in ['g', 'guess', 'make guess']:
+                    return None  # Signal to make a guess
+                elif user_input in ['q', 'quit', 'exit', 'reveal']:
+                    return None  # Signal to quit/reveal answer
+                else:
+                    # Invalid input - ask again
+                    print("   Please enter 'y' (yes), 'n' (no), 'p' (probably), 'pn' (probably not), 'dk' (don't know), 'guess', or 'quit': ", end="", flush=True)
+            except (EOFError, KeyboardInterrupt):
+                # User pressed Ctrl+C or EOF
+                print("\n")
+                return None
+    
+    def _make_guess(self) -> bool:
+        """
+        Make a guess and handle user response.
         
         Returns:
             True if guess was correct, False otherwise
         """
+        # Get best guess from AI
         character, confidence = self.ai.get_best_guess()
         
-        self.print_divider()
-        print(f"\n🎯 I think I know who it is!\n")
-        print(f"   Is your character: {character}?")
-        print(f"   (Confidence: {confidence*100:.1f}%)\n")
+        if not character:
+            print("\n🤔 I don't have enough information to make a guess.")
+            return False
         
-        answer = self.get_yes_no_input("Am I correct?")
+        # Display guess with confidence
+        confidence_pct = confidence * 100
+        print(f"\n🎯 I think your character is: {character}")
+        print(f"   Confidence: {confidence_pct:.1f}%")
+        print("   Is this correct? (y/n): ", end="", flush=True)
         
-        if answer == 'quit':
-            return 'quit'
-        
-        if answer:
-            print("\n🎉 YES! I guessed it correctly!")
-            print(f"✨ It took me {len(self.ai.asked_questions)} questions.\n")
-            return (True, character)  # Return success and character
-        else:
-            print("\n😞 Oh no, I was wrong!")
-            
-            # Track wrong guess
-            self.current_game_guesses.append(character)
-            
-            # Penalize the wrong guess
-            if continue_on_wrong:
-                self.ai.penalize_wrong_guess(character, penalty_factor=0.001)  # 99.9% reduction
-            
-            # Show other top candidates
-            top_5 = self.ai.get_top_characters(5)
-            if len(top_5) > 0:
-                print("\nMy other top guesses are now:")
-                for i, (char, prob) in enumerate(top_5[:5], 1):
-                    print(f"   {i}. {char} ({prob*100:.1f}%)")
-            
-            # Ask who it was
-            print("\nWho was your character? (This helps me learn!)")
-            actual_character = input("Character name: ").strip()
-            
-            # Try to find with fuzzy matching
-            found_char = self.ai.find_character(actual_character)
-            
-            if found_char:
-                print(f"\n💡 Ah! It was {found_char}!")
-                if found_char != actual_character:
-                    print(f"   (I recognized '{actual_character}' as '{found_char}')")
+        # Get user response
+        while True:
+            try:
+                user_input = input().strip().lower()
                 
-                if continue_on_wrong:
-                    # Boost the correct character significantly
-                    self.ai.boost_character(found_char, boost_factor=1000.0)
-                    print("   Let me continue with this information...")
+                if user_input in ['y', 'yes', '1', 'true', 'correct']:
+                    return True
+                elif user_input in ['n', 'no', '0', 'false', 'incorrect', 'wrong']:
+                    return False
                 else:
-                    print("   I'll try to do better next time.")
-                
-                # Return actual character for logging
-                return (False, found_char)
-            else:
-                print(f"\n🤔 I don't have '{actual_character}' in my database.")
-                print("   Similar names I have:")
-                # Show suggestions
-                suggestions = [c for c in self.ai.characters if any(word in c.lower() for word in actual_character.lower().split())][:5]
-                if suggestions:
-                    for s in suggestions:
-                        print(f"      - {s}")
-                else:
-                    print("      (No similar characters found)")
-            
-            return (False, None)
+                    print("   Please enter 'y' (yes) or 'n' (no): ", end="", flush=True)
+            except (EOFError, KeyboardInterrupt):
+                # User pressed Ctrl+C or EOF - treat as incorrect
+                print("\n")
+                return False
     
-    def play_round(self) -> bool:
+    def _handle_correct_guess(self, character: str):
         """
-        Play one round of the game.
+        Handle successful guess.
+        
+        Args:
+            character: Name of the correctly guessed character
+        """
+        questions_asked = len(self.ai.asked_questions)
+        
+        print("\n" + "=" * 60)
+        print("🎉 Correct! I guessed it!")
+        print(f"✅ Character: {character}")
+        print(f"📊 Questions asked: {questions_asked}")
+        print("=" * 60)
+    
+    def _handle_wrong_guess(self, character: str):
+        """
+        Handle incorrect guess.
+        
+        Args:
+            character: Name of the incorrectly guessed character
+        """
+        print(f"\n❌ That's not correct. {character} is not the right answer.")
+        
+        # Penalize the wrong guess in the AI
+        self.ai.penalize_wrong_guess(character)
+        
+        print("   Let me ask more questions...\n")
+    
+    def _reveal_answer(self) -> Optional[str]:
+        """
+        Ask user to reveal the correct answer.
         
         Returns:
-            True if player wants to play again
+            Character name if provided, None if cancelled
         """
-        self.ai.reset()
-        self.current_game_questions = []
-        self.current_game_traits = []
-        self.current_game_guesses = []
-        self.current_game_entropy_reductions = []
-        self.current_game_rl_states = []
-        actual_character = None
-        game_success = False
+        print("\n🤔 What character were you thinking of?")
+        print("   (Enter character name, or 'cancel' to skip): ", end="", flush=True)
         
-        self.print_header()
-        
-        # Ask user to think of a character
-        print("📝 Please think of one of the characters in the database.")
-        input("   Press Enter when you're ready...")
-        
-        # Game loop
-        questions_asked = 0
-        guesses_made = 0
-        max_guesses = 3  # Allow up to 3 guesses per game
-        
-        while questions_asked < self.max_questions:
-            # Adjust confidence threshold based on game progress
-            # More conservative thresholds to avoid wrong guesses
-            if questions_asked <= 8:
-                threshold = 0.75  # 75% confidence for early guesses (high bar)
-            elif questions_asked <= 12:
-                threshold = 0.65  # 65% confidence early-mid game
-            elif questions_asked <= 18:
-                threshold = 0.55  # 55% confidence mid game
-            else:
-                threshold = 0.45  # 45% confidence late game
-            
-            # Check if we should make a guess
-            if self.ai.should_make_guess(threshold=threshold) and guesses_made < max_guesses:
-                # Get top character
-                top_char, top_prob = self.ai.get_best_guess()
-                
-                # Try to ask a confirmation question first
-                confirmation = self.ai.get_confirmation_question(top_char)
-                
-                if confirmation:
-                    question_idx, trait = confirmation
-                    question = self.ai.questions[question_idx]
-                    
-                    self.print_divider()
-                    print(f"\n🔍 Confirmation Question:")
-                    print(f"❓ {question['question']}")
-                    
-                    answer = self.get_yes_no_input("\n   Your answer")
-                    
-                    if answer == 'quit':
-                        return False
-                    
-                    if answer is not None:
-                        # Track entropy for confirmation question too
-                        entropy_before = self.ai.entropy(self.ai.probabilities)
-                        
-                        # Track the confirmation question
-                        self.current_game_questions.append(question['question'])
-                        self.current_game_traits.append(trait)
-                        
-                        # Update probabilities based on confirmation answer
-                        self.ai.update_probabilities(question_idx, answer)
-                        
-                        # Track entropy reduction
-                        entropy_after = self.ai.entropy(self.ai.probabilities)
-                        entropy_reduction = entropy_before - entropy_after
-                        self.current_game_entropy_reductions.append(entropy_reduction)
-                        
-                        questions_asked += 1
-                        
-                        # If answer was NO, dramatically reduce this character's probability
-                        if not answer:
-                            print(f"\n   ❌ That rules out {top_char}!")
-                            self.ai.penalize_wrong_guess(top_char, penalty_factor=0.0001)  # 99.99% reduction
-                            
-                            # Show updated top candidates
-                            new_top = self.ai.get_top_characters(3)
-                            print(f"\n   New top candidates:")
-                            for i, (char, prob) in enumerate(new_top, 1):
-                                print(f"      {i}. {char} ({prob*100:.1f}%)")
-                            
-                            # Don't make a guess, continue asking questions
-                            continue
-                        else:
-                            print(f"\n   ✅ That's a strong indicator for {top_char}!")
-                
-                # Now make the actual guess
-                result = self.make_guess(continue_on_wrong=True)
-                guesses_made += 1
-                
-                if result == 'quit':
-                    return False
-                
-                # Handle new return format (success, character)
-                if isinstance(result, tuple):
-                    success, char = result
-                    if char and not actual_character:
-                        actual_character = char
-                    if success:
-                        game_success = True
-                        break  # Correct guess
-                    # Wrong guess, penalized and boosted correct character
-                    # Show updated stats
-                    print()
-                    self.show_stats()
-                    
-                    # Continue asking more specific questions
-                    if questions_asked >= self.max_questions - 2:
-                        print("\nI'm running out of questions...")
-                        # Make final guess
-                        final_result = self.make_guess(continue_on_wrong=False)
-                        if final_result == 'quit':
-                            return False
-                        if isinstance(final_result, tuple):
-                            final_success, final_char = final_result
-                            if final_char and not actual_character:
-                                actual_character = final_char
-                            if final_success:
-                                game_success = True
-                        break
-            
-            # Select next question
-            question_idx = self.ai.select_best_question()
-            
-            if question_idx is None:
-                print("\n🤷 I've run out of questions to ask!")
-                self.make_guess()
-                break
-            
-            question = self.ai.questions[question_idx]
-            
-            # Ask question
-            self.print_divider()
-            print(f"\nQuestion {questions_asked + 1}/{self.max_questions}:")
-            print(f"❓ {question['question']}")
-            
-            answer = self.get_yes_no_input("\n   Your answer")
-            
-            if answer == 'quit':
-                return False
-            
-            if answer is None:
-                # User skipped, ask different question
-                self.ai.asked_questions.add(question_idx)
-                continue
-            
-            # Track entropy BEFORE answering for learning
-            entropy_before = self.ai.entropy(self.ai.probabilities)
-            top_prob_before = max(self.ai.probabilities)
-            remaining_before = len(self.ai.get_remaining_candidates())
-            
-            # Record RL state-action pair
-            if self.ai.enable_learning and self.ai.rl_agent:
-                rl_state = self.ai.rl_agent.get_state(
-                    entropy_before, top_prob_before, questions_asked, remaining_before
-                )
-                trait = question.get('trait', '')
-                # Record step with -1 reward (cost of asking a question)
-                self.ai.rl_agent.record_step(rl_state, trait, -1.0)
-                self.current_game_rl_states.append((rl_state, trait))
-            
-            # Track question and trait for learning
-            self.current_game_questions.append(question['question'])
-            self.current_game_traits.append(question.get('trait', ''))
-            
-            # Update probabilities based on answer
-            self.ai.update_probabilities(question_idx, answer)
-            
-            # Track entropy AFTER answering and calculate reduction
-            entropy_after = self.ai.entropy(self.ai.probabilities)
-            entropy_reduction = entropy_before - entropy_after
-            self.current_game_entropy_reductions.append(entropy_reduction)
-            
-            questions_asked += 1
-            
-            # Show stats occasionally
-            if questions_asked % 5 == 0:
-                self.show_stats()
-            
-            # Check if only one candidate remains
-            candidates = self.ai.get_remaining_candidates(min_prob=0.01)
-            if len(candidates) == 1:
-                print(f"\n💡 Only one candidate remaining!")
-                result = self.make_guess()
-                if result == 'quit':
-                    return False
-                break
-        else:
-            # Max questions reached
-            print(f"\n⏰ I've reached my limit of {self.max_questions} questions!")
-            self.make_guess()
-        
-        # Log game for learning (if character was identified)
-        if actual_character and self.ai.enable_learning and self.ai.learner:
+        while True:
             try:
-                self.ai.learner.log_game(
-                    character=actual_character,
-                    questions_asked=self.current_game_questions,
-                    num_questions=len(self.current_game_questions),
-                    guesses_made=self.current_game_guesses,
-                    success=game_success,
-                    traits_asked=self.current_game_traits,
-                    entropy_reductions=self.current_game_entropy_reductions
-                )
+                user_input = input().strip()
                 
-                # Show learning progress after logging
-                if game_success:
-                    stats = self.ai.learner.get_stats()
-                    print(f"\n📈 Learning Progress: {stats['total_games']} games logged, "
-                          f"{stats['success_rate']*100:.1f}% success rate")
-            except Exception as e:
-                print(f"Note: Could not log game: {e}")
-        
-        # Complete RL episode
-        if self.ai.enable_learning and self.ai.rl_agent:
-            try:
-                self.ai.rl_agent.end_episode(
-                    success=game_success,
-                    total_questions=len(self.current_game_questions)
-                )
-                # Show RL learning progress every 10 episodes
-                if self.ai.rl_agent.episode_count % 10 == 0:
-                    stats = self.ai.rl_agent.get_stats()
-                    print(f"\n🤖 RL Agent: {stats['episode_count']} episodes, "
-                          f"{stats['unique_states']} states, "
-                          f"ε={stats['epsilon']:.3f}")
-            except Exception as e:
-                print(f"Note: Could not update RL agent: {e}")
-        
-        # Ask to play again
-        self.print_divider()
-        play_again = self.get_yes_no_input("\n🎮 Would you like to play again?")
-        return play_again == True
+                if not user_input:
+                    print("   Please enter a character name or 'cancel': ", end="", flush=True)
+                    continue
+                
+                if user_input.lower() in ['cancel', 'c', 'skip', 'none']:
+                    return None
+                
+                # Try to find the character using fuzzy matching
+                found_char = self.ai.find_character(user_input)
+                
+                if found_char:
+                    return found_char
+                else:
+                    print(f"   Character '{user_input}' not found in database.")
+                    print("   Please try again or enter 'cancel': ", end="", flush=True)
+                    
+            except (EOFError, KeyboardInterrupt):
+                # User pressed Ctrl+C or EOF
+                print("\n")
+                return None
     
-    def run(self):
-        """Main game loop."""
-        try:
-            while True:
-                play_again = self.play_round()
-                if not play_again:
-                    break
-            
-            print("\n" + "="*60)
-            print("  Thanks for playing INDINATOR!")
-            print("  Hope to see you again soon! 👋")
-            print("="*60 + "\n")
-            
-        except KeyboardInterrupt:
-            print("\n\n👋 Game interrupted. Thanks for playing!")
-        except Exception as e:
-            print(f"\n❌ An error occurred: {e}")
-            print("Please report this issue!")
+    def _play_again(self) -> bool:
+        """
+        Ask user if they want to play again.
+        
+        Returns:
+            True if user wants to play again, False otherwise
+        """
+        print("\n🔄 Would you like to play again? (y/n): ", end="", flush=True)
+        
+        while True:
+            try:
+                user_input = input().strip().lower()
+                
+                if user_input in ['y', 'yes', '1', 'true']:
+                    return True
+                elif user_input in ['n', 'no', '0', 'false', 'quit', 'exit']:
+                    return False
+                else:
+                    print("   Please enter 'y' (yes) or 'n' (no): ", end="", flush=True)
+            except (EOFError, KeyboardInterrupt):
+                # User pressed Ctrl+C or EOF - treat as no
+                print("\n")
+                return False
+    
+    def _display_stats(self):
+        """
+        Display current game statistics (for debugging/curiosity).
+        """
+        stats = self.ai.get_stats()
+        
+        print(f"\n📊 [Q{stats['questions_asked']}] Top: {stats['top_character'][0]} ({stats['top_character'][1]*100:.1f}%) | "
+              f"Candidates: {stats['remaining_candidates']} | Entropy: {stats['entropy']:.2f} bits")
+        
+        # Show top 3 candidates in compact format
+        if len(stats['top_5']) > 1:
+            top_3 = stats['top_5'][:3]
+            top_3_str = ", ".join([f"{char} ({prob*100:.0f}%)" for char, prob in top_3])
+            print(f"   Top 3: {top_3_str}")
 

@@ -1,14 +1,32 @@
 """
 Indinator - AI-based Akinator Clone
-An intelligent character guessing game using Bayesian inference, entropy-based question selection,
-and machine learning from game history.
+An intelligent character guessing game using Decision Tree Classifier
+for optimal question selection based on information gain.
 """
 
-from .ai_engine import AkinatorAI
-from .game import AkinatorGame
-from .game_history import GameHistoryLearner
-from .rl_agent import RLQuestionAgent
+__all__ = []
 
-__version__ = "2.5.0"  # RL-enhanced version
-__all__ = ['AkinatorAI', 'AkinatorGame', 'GameHistoryLearner', 'RLQuestionAgent']
+# Import Decision Tree AI engine
+try:
+    from .decision_tree_engine import DecisionTreeAI
+    __all__.append('DecisionTreeAI')
+except (ImportError, ModuleNotFoundError) as e:
+    pass  # decision_tree_engine not available
+
+# Import game interface
+try:
+    from .game import AkinatorGame
+    __all__.append('AkinatorGame')
+except (ImportError, ModuleNotFoundError):
+    pass  # game not available
+
+# For backward compatibility (if needed)
+# Note: AkinatorAI is deprecated, use DecisionTreeAI instead
+try:
+    AkinatorAI = DecisionTreeAI  # Alias for compatibility
+    __all__.append('AkinatorAI')
+except NameError:
+    pass  # DecisionTreeAI not available
+
+__version__ = "3.0.0"  # Decision Tree version
 
