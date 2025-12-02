@@ -5,17 +5,8 @@
       "memory": 1024
     }
   },
-  "ignore": [
-    "venv/",
-    "__pycache__/",
-    ".pytest_cache/",
-    "tests/",
-    "*.log",
-    "notebooks/",
-    "data/",
-    "tmp/",
-    ".git/",
-    ".gitignore"
+  "builds": [
+    { "src": "api/*.py", "use": "@vercel/python" }
   ]
 }
 
